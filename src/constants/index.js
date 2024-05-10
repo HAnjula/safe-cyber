@@ -305,6 +305,7 @@ export const RansomwareMethods = [
     id: "0",
     title: "Encrypt files",
     text: "Makes files unreadable",
+    ways: "Software Vulnerabilities",
     iconUrl: benefitIcon1,
   },
   {
@@ -312,24 +313,28 @@ export const RansomwareMethods = [
     title: "Targets organizations",
     text: "Goes after businesses",
     iconUrl: benefitIcon2,
+    ways: "Phishing Attacks",
     light: true,
   },
   {
     id: "2",
     title: "Attacks servers",
     text: "Hits network systems",
+    ways: "Weak Passwords",
     iconUrl: benefitIcon3,
   },
   {
     id: "3",
     title: "Infects personal devices",
     text: "Affects phones and tablets",
+    ways: "Drive-by Downloads",
     iconUrl: benefitIcon4,
   },
   {
     id: "4",
     title: "Ransoms vary",
     text: "Ransom amounts differ",
+    ways: "Malvertising",
     iconUrl: benefitIcon2,
   },
 ];

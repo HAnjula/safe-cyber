@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import { RansomwareMethods } from "../constants";
-import { SpreadMethods } from "../constants";
+import { useState } from "react";
 import { heroBackground } from "../assets";
 import { hacker } from "../assets";
 import { laptop } from "../assets";
@@ -13,6 +13,8 @@ import { server } from "../assets";
 import { bitcoin } from "../assets";
 
 const Ransomware = () => {
+  const [hoveredItem, setHoveredItem] = useState(null);
+
   return (
     <Section id="how-to-use" crosses>
       <div className="container mb-10 relative">
@@ -54,37 +56,17 @@ const Ransomware = () => {
           ))}
         </div>
         {/* Heading component for SpreadMethods */}
-        <Heading
-          title="How does ransomware spread?"
-          text="Ransomware can infect your computer through a variety of methods. It often infiltrates systems via phishing emails, malicious websites, or software vulnerabilities. Once inside, it can quickly spread across networks, leaving a trail of destruction."
-          className="z-10 relative"
-        />
-        <div className="lg:flex lg:flex-row flex items-center justify-center">
-          <div className="relative flex flex-col lg:flex-row gap-5">
-            {/* Rendering SpreadMethods */}
-            {SpreadMethods.map((item) => (
-              <div className="flex flex-col lg:flex-col" key={item.id}>
-                <div
-                  className="relative z-1 w-[20rem] md:w-[20rem] flex flex-row h-[15rem] md:h-[20rem] lg:h-[15rem] lg:w-[15rem] mb-2 p-5 border border-n-1/10 rounded-3xl overflow-hidden hover:scale-105 transition-all duration-150 ease-in bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${item.iconUrl})`,
-                  }}
-                ></div>
-                <div className="relative z-1 flex flex-col w-full md:w-auto h-[10rem] md:h-[20rem] lg:h-[15rem] lg:w-[15rem] mb-2 p-5 overflow-hidden bg-cover bg-center">
-                  <h6 className="h6">{item.title}</h6>
-                  <p className="body-2 mb-2 lg:mb-6 text-n-3 text-sm">
-                    {item.text}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+
         <Heading
           title="Anatomy of a Ransomware Attack"
           className="z-10 relative"
         />
-        <div className="relative flex flex-wrap gap-5 lg:flex lg:items-center lg:justify-between border-white mb-15">
+        <div className="relative gap-5 lg:flex lg:items-center lg:justify-between border-white mb-15">
+          <p className="body-2 text-left text-n-3">
+            01. In the initial phase of a ransomware attack, attackers typically
+            seek out vulnerable targets through various means.
+          </p>
+
           <img className="w-[180px] h-[180px]" src={hacker} alt="#hacker" />
           <div className="arrow-1"></div>
           <img
@@ -92,6 +74,28 @@ const Ransomware = () => {
             src={laptop}
             alt="#hacker"
           />
+        </div>
+
+        <div className="relative flex items-center flex flex-col justify-center gap-5 lg:flex lg:flex-row border-white mb-15">
+          {/* Rendering Ransomware methods */}
+          {RansomwareMethods.map((item) => (
+            <div
+              className="relative z-1 flex items-center justify-center w-[20rem] h-[5rem] p-5 border border-n-1/10 rounded-2xl overflow-hidden"
+              key={item.id}
+              onMouseEnter={() => setHoveredItem(item.id)}
+              onMouseLeave={() => setHoveredItem(null)}
+            >
+              <div className="relative z-2 flex items-center justify-center p-[1.1rem] pointer-events-none">
+                <p className="body-2 text-center text-n-3">{item.ways}</p>
+              </div>
+              {hoveredItem === item.id && (
+                <div className="absolute z-10  -translate-x-1/2 mt-2 p-4 bg-white border border-gray-300 rounded-md shadow-md">
+                  {/* Popup content goes here */}
+                  <p>This is a pop-up window for {item.ways}</p>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </Section>
