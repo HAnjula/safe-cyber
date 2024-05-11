@@ -28,6 +28,7 @@ const App = () => {
         />
         <Route path="/ransomware" element={<Ransomware />} />
       </Routes>
+
       <ButtonGradient />
     </div>
   );

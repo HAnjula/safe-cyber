@@ -5,15 +5,22 @@ import { useState } from "react";
 import { heroBackground } from "../assets";
 import { hacker } from "../assets";
 import { laptop } from "../assets";
-import { bug } from "../assets";
-import { ransomware2 } from "../assets";
-import { cloud1 } from "../assets";
-import { key } from "../assets";
-import { server } from "../assets";
-import { bitcoin } from "../assets";
 
 const Ransomware = () => {
-  const [hoveredItem, setHoveredItem] = useState(null);
+  // State to track clicked item for each div
+  const [clickedItem, setClickedItem] = useState(null);
+
+  // State to track whether the separate div should be shown for each div
+  const [showSeparateDiv, setShowSeparateDiv] = useState({});
+
+  // Method to be triggered when clicking on an item
+  const handleClick = (itemId) => {
+    setShowSeparateDiv((prevState) => ({
+      ...prevState,
+      [itemId]: !prevState[itemId],
+    }));
+    setClickedItem(itemId); // Set the clicked item
+  };
 
   return (
     <Section id="how-to-use" crosses>
@@ -82,21 +89,53 @@ const Ransomware = () => {
             <div
               className="relative z-1 flex items-center justify-center w-[20rem] h-[5rem] p-5 border border-n-1/10 rounded-2xl overflow-hidden"
               key={item.id}
-              onMouseEnter={() => setHoveredItem(item.id)}
-              onMouseLeave={() => setHoveredItem(null)}
+              onClick={() => handleClick(item.id)}
             >
               <div className="relative z-2 flex items-center justify-center p-[1.1rem] pointer-events-none">
                 <p className="body-2 text-center text-n-3">{item.ways}</p>
               </div>
-              {hoveredItem === item.id && (
-                <div className="absolute z-10  -translate-x-1/2 mt-2 p-4 bg-white border border-gray-300 rounded-md shadow-md">
-                  {/* Popup content goes here */}
-                  <p>This is a pop-up window for {item.ways}</p>
-                </div>
-              )}
             </div>
           ))}
         </div>
+
+        {RansomwareMethods.map((item) => (
+          <div key={item.id}>
+            {showSeparateDiv[item.id] && clickedItem === item.id && (
+              <div className="relative flex items-start justify-center w-[645px] left-1/4 h-[300px] p-4 rounded-2xl border border-n-1/10 shadow z-10">
+                {item.id === 0 && (
+                  <>
+                    <p className="text-color-3">Pop-up content for ID 0</p>
+                  </>
+                )}
+                {item.id === 1 && (
+                  <>
+                    <p>Pop-up content for ID 1</p>
+                    {/* Add content specific to ID 1 */}
+                  </>
+                )}
+                {item.id === 2 && (
+                  <>
+                    <p>Pop-up content for ID 2</p>
+                    {/* Add content specific to ID 2 */}
+                  </>
+                )}
+                {item.id === 3 && (
+                  <>
+                    <p>Pop-up content for ID 3</p>
+                    {/* Add content specific to ID 3 */}
+                  </>
+                )}
+                {item.id === 4 && (
+                  <>
+                    <p>Pop-up content for ID 4</p>
+                    {/* Add content specific to ID 4 */}
+                  </>
+                )}
+                <p className="text-color-3">Pop-up content for ID {item.id}</p>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </Section>
   );
