@@ -306,6 +306,8 @@ export const RansomwareMethods = [
     title: "Encrypt files",
     text: "Makes files unreadable",
     ways: "Software Vulnerabilities",
+    description:
+      "Software vulnerabilities are weaknesses in software that attackers exploit to gain unauthorized access. To avoid them, regularly update your software, use strong passwords, and stay informed about security threats.",
     iconUrl: benefitIcon1,
   },
   {
@@ -314,6 +316,8 @@ export const RansomwareMethods = [
     text: "Goes after businesses",
     iconUrl: benefitIcon2,
     ways: "Phishing Attacks",
+    description:
+      "Phishing attacks, by deceiving users into interacting with malicious content, serve as the gateway for ransomware intrusion. These attacks exploit vulnerabilities in system security, encrypting files and demanding ransom for decryption. Hence, combating phishing is vital to thwart ransomware incidents.",
     light: true,
   },
   {

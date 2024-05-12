@@ -101,37 +101,23 @@ const Ransomware = () => {
         {RansomwareMethods.map((item) => (
           <div key={item.id}>
             {showSeparateDiv[item.id] && clickedItem === item.id && (
-              <div className="relative flex items-start justify-center w-[645px] left-1/4 h-[300px] p-4 rounded-2xl border border-n-1/10 shadow z-10">
-                {item.id === 0 && (
-                  <>
-                    <p className="text-color-3">Pop-up content for ID 0</p>
-                  </>
+              <div className="relative flex flex-col gap-4 items-center justify-center w-[645px] left-1/4 h-[300px] p-8 rounded-2xl border border-n-1/10 shadow z-10 animate-fade-in">
+                <h1 className="text-color-3 h5 top-0 animate-fade-in">
+                  {item.ways}
+                </h1>
+                <p className="body-2 text-center text-n-3 animate-fade-in">
+                  {item.description}
+                </p>
+                {item.id == 1 && (
+                  <button className="hover:bg-gray-800 text-color-3 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                    Live Demo
+                  </button>
                 )}
-                {item.id === 1 && (
-                  <>
-                    <p>Pop-up content for ID 1</p>
-                    {/* Add content specific to ID 1 */}
-                  </>
+                {item.id == 2 && (
+                  <button className="hover:bg-gray-800 text-color-3 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                    Live Demo
+                  </button>
                 )}
-                {item.id === 2 && (
-                  <>
-                    <p>Pop-up content for ID 2</p>
-                    {/* Add content specific to ID 2 */}
-                  </>
-                )}
-                {item.id === 3 && (
-                  <>
-                    <p>Pop-up content for ID 3</p>
-                    {/* Add content specific to ID 3 */}
-                  </>
-                )}
-                {item.id === 4 && (
-                  <>
-                    <p>Pop-up content for ID 4</p>
-                    {/* Add content specific to ID 4 */}
-                  </>
-                )}
-                <p className="text-color-3">Pop-up content for ID {item.id}</p>
               </div>
             )}
           </div>
