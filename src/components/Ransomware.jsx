@@ -5,8 +5,40 @@ import { useState } from "react";
 import { heroBackground } from "../assets";
 import { hacker } from "../assets";
 import { laptop } from "../assets";
+import axios from "axios";
 
 const Ransomware = () => {
+  const [password, setPassword] = useState("");
+  const [result, setResult] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!password) {
+      setResult("Please enter a password");
+      return;
+    }
+    try {
+      const response = await axios.post(
+        "http://127.0.0.1:3000/api/v1/password/strength",
+        {
+          password,
+        }
+      );
+      setResult(response.data.message);
+    } catch (error) {
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        setResult(`Error: ${error.response.data.message}`);
+      } else if (error.request) {
+        // The request was made but no response was received
+        setResult("Network error, please try again later");
+      } else {
+        // Something happened in setting up the request that triggered an error
+        setResult("An unexpected error occurred");
+      }
+      console.error(error);
+    }
+  };
   // State to track clicked item for each div
   const [clickedItem, setClickedItem] = useState(null);
 
@@ -114,9 +146,23 @@ const Ransomware = () => {
                   </button>
                 )}
                 {item.id == 2 && (
-                  <button className="hover:bg-gray-800 text-color-3 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
-                    Live Demo
-                  </button>
+                  <>
+                    <h2>Password Strength Checker</h2>
+                    <form onSubmit={handleSubmit}>
+                      <input
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        placeholder="Enter your password"
+                        required
+                      />
+                      <button type="submit">Check Strength</button>
+                    </form>
+                    {result && <p>{result}</p>}
+                    <button className="hover:bg-gray-800 text-color-3 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                      Live Demo
+                    </button>
+                  </>
                 )}
               </div>
             )}
