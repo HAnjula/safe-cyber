@@ -79,10 +79,9 @@ const Header = () => {
         >
           {isRansomwarePage ? "Back to Home" : "Get started"}
         </Link>
-
-        <Button className="hidden lg:flex" href="#login">
-          Sign in
-        </Button>
+        <Link to={"/login"}>
+          <Button className="hidden lg:flex">Sign in</Button>
+        </Link>
         <Button
           className="ml-auto lg:hidden"
           px="px-3"

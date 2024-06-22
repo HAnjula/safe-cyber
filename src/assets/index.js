@@ -1,4 +1,6 @@
 import brainwave from "./brainwave.svg";
+import technolgy from "./technology.jpg";
+import technology1 from "./technology.mp4";
 import hacker from "./hackman.png";
 import laptop from "./laptop.png";
 import bug from "./malware.png";
@@ -89,6 +91,7 @@ import RDP from "./RDP.jpg";
 import FA from "./FA.jpg";
 
 export {
+  technology1,
   bitcoin,
   server,
   key,
@@ -170,4 +173,5 @@ export {
   SV,
   RDP,
   FA,
+  technolgy,
 };

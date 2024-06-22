@@ -1,4 +1,5 @@
 import { curve, heroBackground, robot } from "../assets";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
@@ -37,9 +38,9 @@ const Hero = () => {
             protection with cutting-edge strategies and resources. Join
             CyberSafe now and fortify your digital defenses effortlessly.
           </p>
-          <Button href="/pricing" white>
-            Get started
-          </Button>
+          <Link to={"/Pricing"}>
+            <Button white>Get started</Button>
+          </Link>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
