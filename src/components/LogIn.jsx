@@ -1,7 +1,40 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import { technology1 } from "../assets";
 import { Link } from "react-router-dom";
+import { useCookies } from "react-cookie";
 
 const LoginPage = () => {
+  const [cookies, setCookie] = useCookies(["token"]);
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(
+        "http://127.0.0.1:3000/api/user/login",
+        { email, password }
+      );
+      if (response.status === 200) {
+        setCookie("token", response.data.token, {
+          expires: new Date(Date.now() + 31 * 24 * 60 * 60 * 1000), // 31 days from now
+          domain: "/",
+          secure: true,
+          sameSite: "Lax",
+        });
+        // Redirect to home page on successful login
+        navigate("/");
+        console.log(response.data.token);
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+    }
+  };
+
   return (
     <section className="flex flex-col md:flex-row h-screen items-center">
       <div className="relative bg-indigo-600 hidden lg:block w-full md:w-1/2 xl:w-2/3 h-screen overflow-hidden">
@@ -21,7 +54,7 @@ const LoginPage = () => {
           <h1 className="text-xl md:text-2xl font-bold leading-tight mt-12">
             Log in to your account
           </h1>
-          <form className="mt-6" action="#" method="POST">
+          <form className="mt-6" onSubmit={handleSubmit}>
             <div>
               <label className="block text-gray-400">Email Address</label>
               <input
@@ -29,10 +62,12 @@ const LoginPage = () => {
                 name="email"
                 id="email"
                 placeholder="Enter Email Address"
-                className="w-full px-4 py-3 rounded-lg mt-2 border bg-transparent focus:border-purple-500  focus:outline-none"
+                className="w-full px-4 py-3 rounded-lg mt-2 border bg-transparent focus:border-purple-500 focus:outline-none"
                 autoFocus
                 autoComplete="email"
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="mt-4">
@@ -43,8 +78,10 @@ const LoginPage = () => {
                 id="password"
                 placeholder="Enter Password"
                 minLength="6"
-                className="w-full px-4 py-3 rounded-lg bg-transparent mt-2 border focus:border-purple-500  focus:outline-none"
+                className="w-full px-4 py-3 rounded-lg bg-transparent mt-2 border focus:border-purple-500 focus:outline-none"
                 required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className="text-right mt-2">
@@ -65,7 +102,7 @@ const LoginPage = () => {
           <hr className="my-6 border-gray-300 w-full" />
           <button
             type="button"
-            className="w-full block bg-transparent hover:bg-gray-800  text-gray-100 font-semibold rounded-lg px-4 py-3 border border-gray-300"
+            className="w-full block bg-transparent hover:bg-gray-800 text-gray-100 font-semibold rounded-lg px-4 py-3 border border-gray-300"
           >
             <div className="flex items-center justify-center">
               <svg
@@ -106,7 +143,7 @@ const LoginPage = () => {
           <p className="mt-8">
             Need an account?{" "}
             <Link
-              to={"/Signup"}
+              to="/Signup"
               className="text-purple-500 hover:text-purple-700 font-semibold"
             >
               Create an account
