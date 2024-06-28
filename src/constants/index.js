@@ -95,6 +95,34 @@ export const brainwaveServicesIcons = [
   sliders04,
 ];
 
+export const indicators = [
+  {
+    title: "Unusual file extensions",
+    description: "File extensions such as .encrypted or .locked.",
+    image: "path_to_image/encrypted_files.jpg", // Replace with your actual image path
+  },
+  {
+    title: "Significant decrease in system performance",
+    description: "Your system may slow down noticeably.",
+    image: "path_to_image/system_performance.jpg", // Replace with your actual image path
+  },
+  {
+    title: "Ransom notes appearing in file directories",
+    description: "Ransom notes may appear in file directories.",
+    image: "path_to_image/ransom_note.jpg", // Replace with your actual image path
+  },
+  {
+    title: "Inability to access files or applications",
+    description: "You may be unable to open certain files or applications.",
+    image: "path_to_image/access_files.jpg", // Replace with your actual image path
+  },
+  {
+    title: "Unexpected system restarts or crashes",
+    description: "Your system may restart or crash unexpectedly.",
+    image: "path_to_image/system_crash.jpg", // Replace with your actual image path
+  },
+];
+
 export const roadmap = [
   {
     id: "0",

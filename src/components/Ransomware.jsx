@@ -6,6 +6,7 @@ import { heroBackground } from "../assets";
 import { hacker } from "../assets";
 import { laptop } from "../assets";
 import axios from "axios";
+import RecognizingAttacks from "./RecognizingAttacks";
 
 const Ransomware = () => {
   const [password, setPassword] = useState("");
@@ -57,7 +58,7 @@ const Ransomware = () => {
   return (
     <>
       <Section id="how-to-use" crosses>
-        <div className="container mb-10 relative">
+        <div className="container relative">
           {/* HeroBackground image moved inside the container */}
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[134%] lg:-top-[50%] z-0">
             <img
@@ -174,18 +175,14 @@ const Ransomware = () => {
           ))}
         </div>
       </Section>
-      <Section className="absolute" crosses>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-        veritatis deleniti in neque voluptatem nulla cumque suscipit amet
-        ratione veniam delectus qui accusamus harum quo, fuga corporis at
-        excepturi eaque vitae nostrum vel earum tenetur! Enim eos cumque
-        voluptatum, id repellat consequatur at suscipit quisquam consequuntur
-        asperiores? Velit nam doloremque aspernatur deserunt, error ex dicta
-        cumque dolores, alias voluptatibus qui sed? Provident animi ipsa,
-        consequatur accusamus numquam quam vel sed rerum obcaecati voluptas
-        sequi asperiores quos ab, mollitia totam maxime aliquid commodi quod
-        consequuntur magnam debitis! Nam ut distinctio culpa iure a quisquam at
-        neque enim repellat reprehenderit, doloremque similique?
+      <Section className="relative" crosses>
+        <div className="min-h-screen container relative">
+          <h1 className="text-5xl font-bold text-center text-gray-400">
+            Ransomware Awareness
+          </h1>
+          <RecognizingAttacks />
+          {/* Add other components here */}
+        </div>
       </Section>
     </>
   );

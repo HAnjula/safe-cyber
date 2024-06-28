@@ -3,6 +3,7 @@ import { collabApps, collabContent } from "../constants";
 import Button from "./Button";
 import Section from "./Section";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
+import { Link } from "react-router-dom";
 
 const Threatsmap = () => {
   return (
@@ -20,8 +21,9 @@ const Threatsmap = () => {
               </li>
             ))}
           </ul>
-
-          <Button>Real Time Map</Button>
+          <Link to={"/LiveThreatsMap"}>
+            <Button>Real Time Map</Button>
+          </Link>
         </div>
 
         <div className="lg:ml-auto xl:w-[38rem] mt-4">
