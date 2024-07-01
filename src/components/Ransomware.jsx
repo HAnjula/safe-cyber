@@ -7,6 +7,8 @@ import { hacker } from "../assets";
 import { laptop } from "../assets";
 import axios from "axios";
 import RecognizingAttacks from "./RecognizingAttacks";
+import PreventionStrategies from "./PreventionStrategies";
+import ImmediateActions from "./ImmediateActions";
 
 const Ransomware = () => {
   const [password, setPassword] = useState("");
@@ -176,13 +178,17 @@ const Ransomware = () => {
         </div>
       </Section>
       <Section className="relative" crosses>
-        <div className="min-h-screen container relative">
+        <div className="min-h-screen container">
           <h1 className="text-5xl font-bold text-center text-gray-400">
             Ransomware Awareness
           </h1>
+
           <RecognizingAttacks />
+
           {/* Add other components here */}
         </div>
+        <PreventionStrategies />
+        <ImmediateActions />
       </Section>
     </>
   );
