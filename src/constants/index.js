@@ -279,7 +279,7 @@ export const benefits = [
   {
     id: "0",
     title: "Ask anything",
-    text: "Easily Access Insights and Solutions, Simplifying Your Digital Security Journey.",
+    text: "Curious about cyber threats? Click here to talk to our bright bot for fast, intelligent answers to any question about cybersecurity you might have!",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
