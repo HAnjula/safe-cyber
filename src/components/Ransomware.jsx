@@ -9,6 +9,7 @@ import axios from "axios";
 import RecognizingAttacks from "./RecognizingAttacks";
 import PreventionStrategies from "./PreventionStrategies";
 import ImmediateActions from "./ImmediateActions";
+import SimulationComponent from "./SimulatedRansomwareAttackExercises";
 
 const Ransomware = () => {
   const [password, setPassword] = useState("");
@@ -189,6 +190,7 @@ const Ransomware = () => {
         </div>
         <PreventionStrategies />
         <ImmediateActions />
+        <SimulationComponent />
       </Section>
     </>
   );

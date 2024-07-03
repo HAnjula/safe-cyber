@@ -57,10 +57,10 @@ const RecoveryProcess = () => (
 // Main Response to Ransomware Attack Component
 const ResponseToRansomwareAttack = () => (
   <section className="max-w-4xl mx-auto my-8">
-    <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
+    <h2 className="text-3xl font-bold mb-8 text-center text-gray-500">
       Response to a Ransomware Attack
     </h2>
-    <div className="flex flex-wrap justify-center gap-6">
+    <div className="flex flex-row justify-center gap-6">
       <ImmediateActions />
       <IncidentReporting />
       <RecoveryProcess />
