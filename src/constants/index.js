@@ -274,7 +274,7 @@ export const benefits = [
   {
     id: "0",
     title: "Ask anything",
-    text: "Curious about cyber threats? Click here to talk to our bright bot for fast, intelligent answers to any question about cybersecurity you might have!",
+    text: "Our bright bot offers fast, intelligent answers to any cybersecurity question you might have.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
@@ -282,7 +282,7 @@ export const benefits = [
   {
     id: "1",
     title: "Improve everyday",
-    text: "The updates we provide ensure that you are informed of current threats, enabling you to take proactive measures to protect yourself.",
+    text: "Our updates keep you informed about current threats, allowing you to take proactive measures to protect yourself.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -291,7 +291,7 @@ export const benefits = [
   {
     id: "2",
     title: "Connect everywhere",
-    text: "You can rely on our bot for information on specific threats as well as personalized tips to enhance your security.",
+    text: "Our bot provides comprehensive threat information and personalized security tips to enhance your security.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
@@ -299,7 +299,7 @@ export const benefits = [
   {
     id: "3",
     title: "Fast responding",
-    text: "Become more aware of cybersecurity concepts and improve your ability to identify and respond to threats with a cybersecurity test.",
+    text: "Improve your ability to identify and respond to threats with a cybersecurity test.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -308,7 +308,7 @@ export const benefits = [
   {
     id: "4",
     title: "Improve Security",
-    text: "Learn about the different types of threats that exist in cyberspace. Learn the strategies employed by the hackers and thereafter know how you can enhance your security online.",
+    text: "Discover cyber threats and ways to improve online security by understanding different types of threats and understanding hacking tactics.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
@@ -316,7 +316,7 @@ export const benefits = [
   {
     id: "5",
     title: "Build strong",
-    text: " Learn how to create a strong security system for your digital life. Explore tools and techniques to keep your devices and data safe from cyber threats.",
+    text: " Detect strategies to create a robust online security plan, safeguarding devices and information from cybercrime risks.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
