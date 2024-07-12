@@ -3,10 +3,8 @@
 const RealTimeMap = () => {
   return (
     <iframe
-      width="900"
-      height="521"
+      className="w-screen h-screen border-0"
       src="https://cybermap.kaspersky.com/en/widget/dynamic/dark"
-      frameBorder="0"
       title="Real Time Map"
     />
   );

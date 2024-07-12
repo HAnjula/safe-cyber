@@ -16,6 +16,8 @@
     "@headlessui/react": "^2.1.1",
     "@js-smart/react-cookie-service": "^2.6.1",
     "axios": "^1.6.8",
+    "jsencrypt": "^3.3.2",
+    "node-rsa": "^1.1.1",
     "react": "^18.2.0",
     "react-cookie": "^7.1.4",
     "react-dom": "^18.2.0",

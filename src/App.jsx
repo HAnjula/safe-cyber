@@ -15,14 +15,19 @@ const App = () => {
   const location = useLocation();
   const isLoginRoute = location.pathname === "/login";
   const isRegisterRoute = location.pathname === "/Signup";
+  const isLiveThreatsMapRoute = location.pathname === "/LiveThreatsMap";
 
   return (
     <div
       className={`overflow-hidden ${
-        !isLoginRoute && !isRegisterRoute ? "pt-[4.75rem] lg:pt-[5.25rem]" : ""
+        !isLoginRoute && !isRegisterRoute && !isLiveThreatsMapRoute
+          ? "pt-[4.75rem] lg:pt-[5.25rem]"
+          : ""
       }`}
     >
-      {!isLoginRoute && !isRegisterRoute && <Header />}
+      {!isLoginRoute && !isRegisterRoute && !isLiveThreatsMapRoute && (
+        <Header />
+      )}
       <Routes>
         <Route
           path="/"

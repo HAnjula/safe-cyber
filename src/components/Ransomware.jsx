@@ -10,6 +10,7 @@ import RecognizingAttacks from "./RecognizingAttacks";
 import PreventionStrategies from "./PreventionStrategies";
 import ImmediateActions from "./ImmediateActions";
 import SimulationComponent from "./SimulatedRansomwareAttackExercises";
+import UnderstandingRansomwareMechanics from "./UnderstandingRansomwareMechanics";
 
 const Ransomware = () => {
   const [password, setPassword] = useState("");
@@ -191,6 +192,7 @@ const Ransomware = () => {
         <PreventionStrategies />
         <ImmediateActions />
         <SimulationComponent />
+        <UnderstandingRansomwareMechanics />
       </Section>
     </>
   );
