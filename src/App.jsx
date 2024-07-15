@@ -10,6 +10,7 @@ import Collab from "./components/Collab";
 import LogIn from "./components/LogIn";
 import RegisterForm from "./components/RegistrationForm";
 import RealTimeMap from "./components/RealTimeMap";
+import AboutUs from "./components/AboutUs";
 
 const App = () => {
   const location = useLocation();
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/Pricing" element={<Pricing />} />
         <Route path="/Signup" element={<RegisterForm />} />
         <Route path="/LiveThreatsMap" element={<RealTimeMap />} />
+        <Route path="/about-us" element={<AboutUs />} />
       </Routes>
       <ButtonGradient />
     </div>

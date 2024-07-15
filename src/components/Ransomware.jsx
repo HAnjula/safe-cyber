@@ -121,7 +121,7 @@ const Ransomware = () => {
             />
           </div>
 
-          <div className="relative flex items-center flex flex-col justify-center gap-5 lg:flex lg:flex-row border-white mb-15">
+          <div className="relative flex items-center flex-col justify-center gap-5 lg:flex lg:flex-row border-white mb-15">
             {/* Rendering Ransomware methods */}
             {RansomwareMethods.map((item) => (
               <div
