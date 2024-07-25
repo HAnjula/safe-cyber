@@ -11,6 +11,7 @@ import LogIn from "./components/LogIn";
 import RegisterForm from "./components/RegistrationForm";
 import RealTimeMap from "./components/RealTimeMap";
 import AboutUs from "./components/AboutUs";
+import Solutions from "./components/Solutions";
 
 const App = () => {
   const location = useLocation();
@@ -48,6 +49,7 @@ const App = () => {
         <Route path="/Signup" element={<RegisterForm />} />
         <Route path="/LiveThreatsMap" element={<RealTimeMap />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/solutions" element={<Solutions />} />
       </Routes>
       <ButtonGradient />
     </div>
