@@ -2,31 +2,59 @@ import Card from "./Card.jsx";
 
 const Cards = () => {
   return (
-    <div className="flex justify-center space-x-8 mt-10">
-      <Card
-        topic="Ransomware"
-        imageSrc="/src/assets/ransomware.jpeg" // replace with your image path
-        description="Ransomware is a type of malicious software that encrypts files on a victim's computer, demanding payment for their release."
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ" // replace with your YouTube link
-      />
-      <Card
-        topic="Social Engineering"
-        imageSrc="/src/assets/se.jpg" // replace with your image path
-        description="Social engineering involves manipulating individuals into divulging confidential information or performing actions that compromise security."
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ" // replace with your YouTube link
-      />
-      <Card
-        topic="Malware"
-        imageSrc="/src/assets/Malware-Attacks.jpg" // replace with your image path
-        description="Malware, short for malicious software, is designed to disrupt, damage, or gain unauthorized access to computer systems and data."
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ" // replace with your YouTube link
-      />
-      <Card
-        topic="DDoS"
-        imageSrc="/src/assets/ddos.jpg" // replace with your image path
-        description="A Distributed Denial of Service (DDoS) attack floods a network or website with an overwhelming amount of traffic, rendering it inaccessible to users."
-        link="https://www.youtube.com/watch?v=dQw4w9WgXcQ" // replace with your YouTube link
-      />
+    <div className="flex flex-col items-center space-y-10 mt-10 mb-10">
+      <div className="flex justify-center space-x-8">
+        <Card
+          topic="Ransomware"
+          imageSrc="/src/assets/ransomware.jpeg"
+          description="Ransomware is a type of malicious software that encrypts files on a victim's computer, demanding payment for their release."
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        />
+        <Card
+          topic="Social Engineering"
+          imageSrc="/src/assets/se.jpg"
+          description="Social engineering involves manipulating individuals into divulging confidential information or performing actions that compromise security."
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        />
+        <Card
+          topic="Malware"
+          imageSrc="/src/assets/Malware-Attacks.jpg"
+          description="Malware, short for malicious software, is designed to disrupt, damage, or gain unauthorized access to computer systems and data."
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        />
+        <Card
+          topic="DDoS"
+          imageSrc="/src/assets/ddos.jpg"
+          description="A Distributed Denial of Service (DDoS) attack floods a network or website with an overwhelming amount of traffic, rendering it inaccessible to users."
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        />
+      </div>
+      <div className="flex justify-center space-x-8">
+        <Card
+          topic="Phishing"
+          imageSrc="/src/assets/phishing1.jpg"
+          description="Phishing attacks trick users into revealing personal information or installing malicious software by pretending to be a legitimate entity."
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        />
+        <Card
+          topic="Spyware"
+          imageSrc="/src/assets/spyware.webp"
+          description="Spyware is a type of malware that secretly monitors and collects user information without their knowledge or consent."
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        />
+        <Card
+          topic="Botnets"
+          imageSrc="/src/assets/botnets.jpeg"
+          description="A botnet is a network of infected computers controlled remotely to perform malicious activities, such as sending spam or launching DDoS attacks."
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        />
+        <Card
+          topic="Zero-Day Exploits"
+          imageSrc="/src/assets/Zero-Day-Attack.jpg"
+          description="Zero-day exploits take advantage of previously unknown vulnerabilities in software, leaving no time for developers to address the issues before attacks occur."
+          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        />
+      </div>
     </div>
   );
 };
