@@ -13,6 +13,7 @@ import RealTimeMap from "./components/RealTimeMap";
 import AboutUs from "./components/AboutUs";
 import Solutions from "./components/Solutions";
 import Threats from "./components/Threats";
+import Socialeng from "./components/Socialeng";
 
 const App = () => {
   const location = useLocation();
@@ -52,6 +53,7 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/threats" element={<Threats />} />
+        <Route path="/socialengineering" element={<Socialeng />} />
       </Routes>
       <ButtonGradient />
     </div>
