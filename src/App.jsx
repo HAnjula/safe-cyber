@@ -14,6 +14,7 @@ import AboutUs from "./components/AboutUs";
 import Solutions from "./components/Solutions";
 import Threats from "./components/Threats";
 import Socialeng from "./components/Socialeng";
+import WebSimulation from "./components/WebSimulation";
 
 const App = () => {
   const location = useLocation();
@@ -54,6 +55,7 @@ const App = () => {
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/threats" element={<Threats />} />
         <Route path="/socialengineering" element={<Socialeng />} />
+        <Route path="/websimulation" element={<WebSimulation />} />
       </Routes>
       <ButtonGradient />
     </div>
