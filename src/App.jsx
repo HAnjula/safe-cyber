@@ -41,6 +41,7 @@ const App = () => {
             <>
               <Hero />
               <Threatsmap />
+              <CyberAttackNews />
               <Benefits />
               <Collab />
               <Pricing />
