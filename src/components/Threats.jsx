@@ -14,12 +14,12 @@ export default function Threats() {
           muted
         ></video>
         <div className="relative z-10">
-          <p className="font-manrope font-medium text-white text-center leading-[112px] text-[104px] mt-20">
+          <p className="font-manrope font-medium text-gray-200 text-center leading-[70px] text-[50px] mt-20">
             <span>
               THREATS
               <br />
             </span>
-            <span className="text-[54px]">
+            <span className="text-[35px]">
               To understand, manage, and mitigate cybersecurity risks. <br />
             </span>
           </p>
@@ -48,8 +48,8 @@ export default function Threats() {
 
       {/* Second Container */}
       <div className="min-h-screen bg-[#110a19] flex flex-col items-center justify-center">
-        <h1 className="font-manrope font-medium text-white text-center leading-[112px] text-[84px] mt-0">
-          Threats : Learn Cybersecurity Awareness
+        <h1 className="font-manrope font-medium text-gray-400 text-center leading-[112px] text-[54px] mt-0">
+          Learn Cybersecurity Awareness
         </h1>
 
         <Cards />

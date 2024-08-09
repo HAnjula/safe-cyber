@@ -57,9 +57,9 @@ const TipsButton = () => {
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-20">
-          <div className="bg-[#dac4ec] p-8 rounded-lg w-[80%] max-w-[600px] text-center border-8 border-[#4f156e]">
-            <h2 className="text-3xl  text-black mb-4">Tips</h2>
-            <p className="mb-6 text-2xl text-black">{tips[currentTipIndex]}</p>
+          <div className="bg-n-8/90 backdrop-blur-sm p-8 rounded-lg w-[80%] max-w-[600px] text-center">
+            <h2 className="text-3xl  text-gray-100">Tips</h2>
+            <p className="mb-6 text-2xl text-gray-400">{tips[currentTipIndex]}</p>
             <div className="flex justify-between mb-6">
               <button
                 className="border-0 bg-transparent py-2 px-4 cursor-pointer transition-opacity duration-300 hover:opacity-75"
@@ -83,7 +83,7 @@ const TipsButton = () => {
               </button>
             </div>
             <button
-              className="border-2 border-red-600 text-red-600 bg-transparent py-2 px-4 cursor-pointer transition-colors duration-300 hover:bg-red-600 hover:text-white"
+              className="border-2 border-red-400 text-red-400 bg-transparent py-2 px-4 cursor-pointer transition-colors duration-300 hover:bg-red-600 hover:text-white"
               onClick={handleCloseModal}
             >
               Close

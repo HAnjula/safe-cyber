@@ -19,7 +19,7 @@ export default function Solutions() {
               SOLUTIONS
               <br />
             </span>
-            <span className="text-[25px]">
+            <span className="text-[30px]">
               To understand manage and mitigate cybersecurity risks. <br />
             </span>
           </p>
