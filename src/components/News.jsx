@@ -39,31 +39,44 @@ const CyberAttackNews = () => {
 
   return (
     <Section crosses>
+      <style>
+        {`
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+          }
+          .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+        `}
+      </style>
       <div className="p-5 max-w-3xl mx-auto bg-n-8 font-sans bg-gray-100 rounded-lg shadow-lg">
-        <h2 className="text-2xl text-center text-gray-800 mb-6">
+        <h2 className="text-2xl text-center text-white mb-6">
           Latest Cyber Attack News
         </h2>
-        <ul className="space-y-6">
-          {news.map((article, index) => (
-            <li key={index} className="border-b border-gray-300 pb-6">
-              <h3 className="text-xl text-blue-600 hover:text-blue-800">
-                {article.title}
-              </h3>
-              <p className="text-gray-700 mt-2">{article.description}</p>
-              <a
-                href={article.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline mt-2 block"
-              >
-                Read more
-              </a>
-              <time className="text-gray-500 text-sm mt-2 block">
-                Published on: {new Date(article.publishedAt).toLocaleString()}
-              </time>
-            </li>
-          ))}
-        </ul>
+        <div className="h-96 overflow-y-scroll scrollbar-hide">
+          <ul className="space-y-6">
+            {news.map((article, index) => (
+              <li key={index} className="border-b border-gray-300 pb-6">
+                <h3 className="text-xl text-blue-600 hover:text-blue-800">
+                  {article.title}
+                </h3>
+                <p className="text-gray-700 mt-2">{article.description}</p>
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline mt-2 block"
+                >
+                  Read more
+                </a>
+                <time className="text-gray-500 text-sm mt-2 block">
+                  Published on: {new Date(article.publishedAt).toLocaleString()}
+                </time>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Section>
   );
