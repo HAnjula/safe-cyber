@@ -13,7 +13,7 @@ const Cards = () => {
         <Card
           topic="Social Engineering"
           imageSrc="/src/assets/se.jpg"
-          description="Social engineering involves manipulating individuals into divulging confidential information or performing actions that compromise security."
+          description="Social engineering manipulates individuals into revealing confidential information or compromising security."
           link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         />
         <Card
@@ -51,7 +51,7 @@ const Cards = () => {
         <Card
           topic="Zero-Day Exploits"
           imageSrc="/src/assets/Zero-Day-Attack.jpg"
-          description="Zero-day exploits take advantage of previously unknown vulnerabilities in software, leaving no time for developers to address the issues before attacks occur."
+          description="Zero-day exploits target unknown software vulnerabilities, giving developers no time to fix them before attacks."
           link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         />
       </div>

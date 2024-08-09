@@ -5,7 +5,7 @@ const Card = ({ topic, imageSrc, description, link }) => {
         <img className="w-full h-40 object-cover" src={imageSrc} alt={topic} />
         <div className="p-6 flex flex-col justify-between h-full">
           <div>
-            <h3 className="text-3xl font-bold mb-4 text-red-500">{topic}</h3>
+            <h3 className="text-2xl font-bold mb-4 text-red-500">{topic}</h3>
             <p className="text-gray-300">{description}</p>
           </div>
         </div>
