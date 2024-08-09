@@ -16,6 +16,7 @@ import Threats from "./components/Threats";
 import Socialeng from "./components/Socialeng";
 import WebSimulation from "./components/WebSimulation";
 import CyberAttackNews from "./components/News";
+import Resourses from "./components/Resources";
 
 const App = () => {
   const location = useLocation();
@@ -59,6 +60,7 @@ const App = () => {
         <Route path="/socialengineering" element={<Socialeng />} />
         <Route path="/websimulation" element={<WebSimulation />} />
         <Route path="/news" element={<CyberAttackNews />} />
+        <Route path="/resources" element={<Resourses />} />
       </Routes>
       <ButtonGradient />
     </div>
