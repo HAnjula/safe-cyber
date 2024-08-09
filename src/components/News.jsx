@@ -51,7 +51,7 @@ const CyberAttackNews = () => {
         `}
       </style>
       <div className="p-5 max-w-3xl mx-auto bg-n-8 font-sans bg-gray-100 rounded-lg shadow-lg">
-        <h2 className="text-2xl text-center text-green mb-6">
+        <h2 className="text-2xl text-center text-orange mb-6">
           Latest Cyber Attack News
         </h2>
         <div className="h-96 overflow-y-scroll scrollbar-hide">
