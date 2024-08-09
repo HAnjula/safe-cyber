@@ -44,33 +44,33 @@ export const navigation = [
   {
     id: "0",
     title: "Threats",
-    url: "#threats",
+    url: "threats",
   },
   {
     id: "1",
     title: "Solutions",
-    url: "#solutions",
+    url: "solutions",
   },
   {
     id: "2",
     title: "Resources",
-    url: "#resources",
+    url: "resources",
   },
   {
     id: "3",
     title: "About us",
-    url: "#about-us",
+    url: "about-us",
   },
   {
     id: "4",
     title: "New account",
-    url: "#signup",
+    url: "signup",
     onlyMobile: true,
   },
   {
     id: "5",
     title: "Sign in",
-    url: "#login",
+    url: "login",
     onlyMobile: true,
   },
 ];
@@ -115,6 +115,26 @@ export const indicators = [
   {
     title: "Unexpected system restarts or crashes",
     description: "Your system may restart or crash unexpectedly.",
+  },
+];
+
+// src/constants/index.jsx
+// src/constants/index.js
+export const details = [
+  {
+    id: "0",
+    text: "In today's digital world, cybersecurity is a shared responsibility. Together, we can learn, share knowledge, and create a safer online environment for everyone. We believe that everyone deserves to feel secure online.",
+  },
+  {
+    id: "1",
+    text1: "CS Students - University of Kelaniya Passionate Cybersecurity Team",
+    text2:
+      "Building Awareness, Building Security Expands on the awareness aspect.",
+  },
+  {
+    id: "2",
+    text1: "Learn, Share, Stay Secure - Simple call to action.",
+    text2: "online",
   },
 ];
 
@@ -320,6 +340,26 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
+  },
+];
+
+export const mission = [
+  {
+    id: "0",
+    title: "Our Mission",
+    text: "Empowering individuals and organizations to stay vigilant and secure in the ever-evolving digital landscape. We achieve this by providing engaging, informative, and accessible cybersecurity awareness training that equips users with the knowledge and skills to identify, prevent, and respond to cyber threats.",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: benefitImage2,
+  },
+  {
+    id: "1",
+    title: "Our Vision",
+    text: "We envision a world where everyone possesses the necessary cybersecurity awareness to navigate the online environment with confidence and minimize the risk of cyberattacks. We strive to be the leading provider of innovative and effective cybersecurity awareness training solutions, fostering a global culture of security consciousness.",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: benefitImage2,
+    light: true,
   },
 ];
 

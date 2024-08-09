@@ -10,6 +10,12 @@ import Collab from "./components/Collab";
 import LogIn from "./components/LogIn";
 import RegisterForm from "./components/RegistrationForm";
 import RealTimeMap from "./components/RealTimeMap";
+import AboutUs from "./components/AboutUs";
+import Solutions from "./components/Solutions";
+import Threats from "./components/Threats";
+import Socialeng from "./components/Socialeng";
+import WebSimulation from "./components/WebSimulation";
+import CyberAttackNews from "./components/News";
 
 const App = () => {
   const location = useLocation();
@@ -35,6 +41,7 @@ const App = () => {
             <>
               <Hero />
               <Threatsmap />
+              <CyberAttackNews />
               <Benefits />
               <Collab />
               <Pricing />
@@ -46,6 +53,12 @@ const App = () => {
         <Route path="/Pricing" element={<Pricing />} />
         <Route path="/Signup" element={<RegisterForm />} />
         <Route path="/LiveThreatsMap" element={<RealTimeMap />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/solutions" element={<Solutions />} />
+        <Route path="/threats" element={<Threats />} />
+        <Route path="/socialengineering" element={<Socialeng />} />
+        <Route path="/websimulation" element={<WebSimulation />} />
+        <Route path="/news" element={<CyberAttackNews />} />
       </Routes>
       <ButtonGradient />
     </div>
