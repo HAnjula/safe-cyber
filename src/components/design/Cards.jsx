@@ -40,7 +40,7 @@ const Cards = () => {
           topic="Spyware"
           imageSrc="/src/assets/spyware.webp"
           description="Spyware is a type of malware that secretly monitors and collects user information without their knowledge or consent."
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link="/spyware"
         />
         <Card
           topic="Botnets"
