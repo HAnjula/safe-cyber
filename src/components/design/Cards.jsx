@@ -14,7 +14,7 @@ const Cards = () => {
           topic="Social Engineering"
           imageSrc="/src/assets/se.jpg"
           description="Social engineering manipulates individuals into revealing confidential information or compromising security."
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link="/Socialeng"
         />
         <Card
           topic="Malware"
@@ -34,7 +34,7 @@ const Cards = () => {
           topic="Phishing"
           imageSrc="/src/assets/phishing1.jpg"
           description="Phishing attacks trick users into revealing personal information or installing malicious software by pretending to be a legitimate entity."
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link="/phishing"
         />
         <Card
           topic="Spyware"
@@ -46,13 +46,13 @@ const Cards = () => {
           topic="Botnets"
           imageSrc="/src/assets/botnets.jpeg"
           description="A botnet is a network of infected computers controlled remotely to perform malicious activities, such as sending spam or launching DDoS attacks."
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link="/botnets"
         />
         <Card
           topic="Zero-Day Exploits"
           imageSrc="/src/assets/Zero-Day-Attack.jpg"
           description="Zero-day exploits target unknown software vulnerabilities, giving developers no time to fix them before attacks."
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link="/zeroexploits"
         />
       </div>
     </div>
