@@ -17,6 +17,10 @@ import Socialeng from "./components/Socialeng";
 import WebSimulation from "./components/WebSimulation";
 import CyberAttackNews from "./components/News";
 import Resourses from "./components/Resources";
+import Spyware from "./components/spyware";
+import Botnets from "./components/botnets";
+import Zeroexploits from "./components/zeroexploits";
+import Phishing from "./components/phishing";
 
 const App = () => {
   const location = useLocation();
@@ -57,10 +61,14 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/threats" element={<Threats />} />
-        <Route path="/socialengineering" element={<Socialeng />} />
         <Route path="/websimulation" element={<WebSimulation />} />
         <Route path="/news" element={<CyberAttackNews />} />
         <Route path="/resources" element={<Resourses />} />
+        <Route path="/spyware" element={<Spyware />} />
+        <Route path="/botnets" element={<Botnets />} />
+        <Route path="/zeroexploits" element={<Zeroexploits />} />
+        <Route path="/phishing" element={<Phishing />} />
+        <Route path="/Socialeng" element={<Socialeng />} />
       </Routes>
       <ButtonGradient />
     </div>
