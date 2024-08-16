@@ -41,7 +41,7 @@ export default function Resourses() {
             <p className="topic text-black font-bold text-2xl p-4">
               Social Engineering Resources:
             </p>
-            <div className="content p-4 text-ash">
+            <div className="content p-4 text-ash text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding Social Engineering:</p>
@@ -189,7 +189,7 @@ export default function Resourses() {
             <p className="topic text-black font-bold text-2xl p-4">
               Ransomware Resources:
             </p>
-            <div className="text-ash text-1.0em">
+            <div className="text-ash text-1.0em  text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding Ransomware:</p>
@@ -325,7 +325,7 @@ export default function Resourses() {
             <p className="topic text-black font-bold text-2xl p-4">
               Phishing Resources:
             </p>
-            <div className="content p-4 text-ash text-1.0em">
+            <div className="content p-4 text-ash text-1.0em  text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding Phishing:</p>
@@ -481,7 +481,7 @@ export default function Resourses() {
             <p className="text-black font-bold text-center  text-2xl p-4">
               DDoS Attacks Resources:
             </p>
-            <div className="content p-4 text-ash text-1.0em">
+            <div className="content p-4 text-ash text-1.0em  text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding DDoS Attacks:</p>
@@ -631,7 +631,7 @@ export default function Resourses() {
             <p className="text-black font-bold text-center  text-2xl p-4">
               Secure Communication:
             </p>
-            <div className="content p-4 text-ash text-1.0em">
+            <div className="content p-4 text-ash text-1.0em  text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding Secure Communication:</p>
@@ -782,7 +782,7 @@ export default function Resourses() {
             <p className="text-black font-bold text-center  text-2xl p-4">
               Incident Response:
             </p>
-            <div className="content p-4 text-ash text-1.0em">
+            <div className="content p-4 text-ash text-1.0em  text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding Incident Response:</p>
