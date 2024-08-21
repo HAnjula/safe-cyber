@@ -16,11 +16,12 @@ import Threats from "./components/Threats";
 import Socialeng from "./components/Socialeng";
 import WebSimulation from "./components/WebSimulation";
 import CyberAttackNews from "./components/News";
-import Resourses from "./components/Resources";
+import Resources from "./components/Resources";
 import Spyware from "./components/spyware";
-import Botnets from "./components/botnets";
+import BotnetSimulation from "./components/botnets";
 import Zeroexploits from "./components/zeroexploits";
 import Phishing from "./components/phishing";
+import CaseIncidentReport from "./components/CaseIncidentReport";
 
 const App = () => {
   const location = useLocation();
@@ -36,9 +37,12 @@ const App = () => {
           : ""
       }`}
     >
+      {/* Conditionally render the Header based on the route */}
       {!isLoginRoute && !isRegisterRoute && !isLiveThreatsMapRoute && (
         <Header />
       )}
+
+      {/* Routes */}
       <Routes>
         <Route
           path="/"
@@ -63,13 +67,19 @@ const App = () => {
         <Route path="/threats" element={<Threats />} />
         <Route path="/websimulation" element={<WebSimulation />} />
         <Route path="/news" element={<CyberAttackNews />} />
-        <Route path="/resources" element={<Resourses />} />
+        <Route path="/resources" element={<Resources />} />
         <Route path="/spyware" element={<Spyware />} />
-        <Route path="/botnets" element={<Botnets />} />
+        <Route path="/botnets" element={<BotnetSimulation />} />
         <Route path="/zeroexploits" element={<Zeroexploits />} />
         <Route path="/phishing" element={<Phishing />} />
         <Route path="/Socialeng" element={<Socialeng />} />
+        <Route path="/report" element={<CaseIncidentReport />} />
       </Routes>
+
+      {/* Floating Case Incident Report Icon */}
+      <CaseIncidentReport />
+
+      {/* Button Gradient */}
       <ButtonGradient />
     </div>
   );
