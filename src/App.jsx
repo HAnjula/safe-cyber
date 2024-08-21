@@ -21,7 +21,7 @@ import Spyware from "./components/spyware";
 import BotnetSimulation from "./components/botnets";
 import Zeroexploits from "./components/zeroexploits";
 import Phishing from "./components/phishing";
-import CaseIncidentReport from "./components/CaseIncidentReport";
+import IncidentReportForm from "./components/IncidentReportForm";
 
 const App = () => {
   const location = useLocation();
@@ -73,12 +73,9 @@ const App = () => {
         <Route path="/zeroexploits" element={<Zeroexploits />} />
         <Route path="/phishing" element={<Phishing />} />
         <Route path="/Socialeng" element={<Socialeng />} />
-        <Route path="/report" element={<CaseIncidentReport />} />
       </Routes>
 
-      {/* Floating Case Incident Report Icon */}
-      <CaseIncidentReport />
-
+      <IncidentReportForm />
       {/* Button Gradient */}
       <ButtonGradient />
     </div>
