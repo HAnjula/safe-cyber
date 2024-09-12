@@ -19,7 +19,6 @@ const CyberAttackNews = () => {
         setNews(response.data.articles);
         setLoading(false);
 
-        // Identify the latest article
         const latestArticle = response.data.articles[0];
         setLatest(latestArticle);
       } catch (error) {
@@ -30,9 +29,7 @@ const CyberAttackNews = () => {
 
     fetchNews();
 
-    // Polling for live updates every 5 minutes
     const intervalId = setInterval(fetchNews, 300000);
-
     return () => clearInterval(intervalId);
   }, []);
 
@@ -75,22 +72,27 @@ const CyberAttackNews = () => {
             100% { opacity: 1; }
           }
           .news-title:hover {
-            color: #4a4a4a; /* Darker gray */
+            color: #ff4444;
+            transition: color 0.3s;
+          }
+          .danger-text {
+            color: #ff4444;
+            font-weight: bold;
           }
         `}
       </style>
-      <div className="relative p-5 max-w-3xl mx-auto bg-gray-800 bg-opacity-50 font-sans rounded-lg shadow-lg">
+      <div className="relative p-5 max-w-3xl mx-auto bg-black bg-opacity-80 font-sans rounded-lg shadow-lg border border-red-600">
         <div className="w-auto h-auto flex items-start justify-center">
-          <h2 className="text-2xl text-center text-white mb-6 relative">
+          <h2 className="text-3xl text-center text-white mb-6 relative">
             Latest Cyber Attack News
             {latest && <span className="blinking-light"></span>}
           </h2>
         </div>
-        <div className="h-96 overflow-y-scroll bg-gray-700 p-4 rounded-lg">
+        <div className="h-96 overflow-y-scroll bg-gray-900 p-4 rounded-lg shadow-inner">
           <ul className="space-y-4">
             {news.slice(0, visibleNews).map((article, index) => (
               <li key={index} className="border-b border-gray-600 pb-4">
-                <h3 className="text-xl text-gray-300 hover:text-gray-100 news-title">
+                <h3 className="text-xl text-white news-title">
                   {article.title}
                 </h3>
                 <p className="text-gray-400 mt-2">{article.description}</p>
@@ -98,7 +100,7 @@ const CyberAttackNews = () => {
                   href={article.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-400 hover:underline mt-2 block"
+                  className="text-red-500 hover:underline mt-2 block"
                 >
                   Read more
                 </a>
@@ -113,7 +115,7 @@ const CyberAttackNews = () => {
           <div className="text-center mt-6">
             <button
               onClick={handleLoadMore}
-              className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+              className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors"
             >
               Load More News
             </button>

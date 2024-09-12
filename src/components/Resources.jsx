@@ -1,36 +1,29 @@
+import Heading from "./Heading";
 export default function Resourses() {
   return (
     <div>
       <div className="relative w-full">
         {/* First Container */}
-        <div
-          className="relative w-full h-screen bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center"
-          style={{ backgroundImage: "url(src/assets/bgimg.jpg)" }}
-        >
-          <p className="font-manrope font-medium text-white text-center leading-[112px] text-[84px]">
-            <span>
-              Your Cybersecurity Toolkit
-              <br />
-            </span>
-          </p>
-          <p className="font-manrope font-medium text-white text-center leading-[112px] text-[64px]">
-            <span>Explore Resources to Stay Secure Online</span>
-          </p>
-          <p className="w-[949px] h-[289px] font-manrope font-medium text-white text-center leading-[26px] text-[25px] mt-10">
-            Learn Together, Stay Secure:
-            <br />
-            <span className="block mt-7">
-              Access Resources to Build Your Defenses.
-            </span>
-            <br />
-            <span className="block mt-7">
-              This highlights the users role in learning and building security
-              awareness
-            </span>
-          </p>
-          <button className="absolute bottom-4 right-4 border-2 border-white text-white bg-transparent py-4 px-8 text-2xl cursor-pointer transition-colors duration-300 hover:bg-white hover:text-black">
-            Tips
-          </button>
+        <div className="relative w-full h-screen flex flex-col justify-center items-center">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src="src/assets/bgvideor-vmake.mp4"
+            autoPlay
+            loop
+            muted
+          />
+          {/* Content that should overlay the video */}
+          <div className="relative z-10 text-center px-4">
+            <Heading
+              className="md:max-w-md lg:max-w-2xl text-white"
+              title="Our Mission is to shine a Light on Cybersecurity Awareness"
+            />
+            <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8 text-white">
+              Learn Together, Stay Secure: Access Resources to Build Your
+              Defenses. This highlights the user's role in learning and building
+              security awareness.
+            </p>
+          </div>
         </div>
 
         {/* Second Container */}
@@ -38,294 +31,302 @@ export default function Resourses() {
           {/* Second Container */}
 
           <div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
-            <p className="topic text-black font-bold text-2xl p-4">
-              Social Engineering Resources:
-            </p>
-            <div className="content p-4 text-ash">
-              <ul className="list-disc pl-4">
+            <h2 className="text-black font-bold text-2xl mb-6">
+              Social Engineering Resources
+            </h2>
+
+            <section className="mb-6">
+              <h3 className="font-semibold text-lg text-black mb-3">
+                Understanding Social Engineering
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  <p className="pl-4">Understanding Social Engineering:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.sans.org/white-papers/529/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        SANS Institute InfoSec Reading Room: Social Engineering
-                        Attacks
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://tresorit.com/blog/keeping-data-safe-in-social-engineering-attacks/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        CSO Online: What is Social Engineering?
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://insights.sei.cmu.edu/documents/2457/2017_015_001_452233.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Carnegie Mellon University CERT in Social Engineering
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=5G-TzHELOkk"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        TED Talk: Kevin Mitnick: The art of deception (18
-                        minutes)
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="https://www.sans.org/white-papers/529/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    SANS Institute InfoSec Reading Room: Social Engineering
+                    Attacks
+                  </a>
                 </li>
                 <li>
-                  <p className="pl-4">Types of Social Engineering Attacks:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://blog.knowbe4.com/social-engineering-number-one-cybersecurity-problem"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        KnowBe4: Top 10 Social Engineering Attacks
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.checkpoint.com/cyber-hub/threat-prevention/social-engineering-attacks/social-engineering-vs-phishing/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Infosec Institute: Phishing vs. Social Engineering: The
-                        Key Differences
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="https://tresorit.com/blog/keeping-data-safe-in-social-engineering-attacks/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    CSO Online: What is Social Engineering?
+                  </a>
                 </li>
                 <li>
-                  <p className="pl-4">
-                    Identifying and Avoiding Social Engineering:
-                  </p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.austintexas.gov/sites/default/files/files/HR/NEO/social-engineering.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        US-CERT: Social Engineering Red Flags
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.nist.gov/privacy-framework/nist-sp-800-61"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        National Institute of Standards and Technology
-                        (NIST)—Special Publication 800-61 Revision 3—Digital
-                        Identity Guidelines
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://staysafeonline.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        National Cyber Security Alliance: Stay Safe Online:
-                        Social Engineering
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=lc7scxvKQOo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Cybrary: Social Engineering Explained (10 minutes)
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="https://insights.sei.cmu.edu/documents/2457/2017_015_001_452233.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Carnegie Mellon University CERT: Social Engineering
+                  </a>
                 </li>
                 <li>
-                  <p className="pl-4">Additional Resources:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.infosecurity-magazine.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Security Magazine - Social Engineering
-                      </a>
-                    </li>
-                  </ul>
+                  <a
+                    href="https://www.youtube.com/watch?v=5G-TzHELOkk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    TED Talk: Kevin Mitnick - The Art of Deception (18 minutes)
+                  </a>
                 </li>
               </ul>
-            </div>
+            </section>
+
+            <section className="mb-6">
+              <h3 className="font-semibold text-lg text-black mb-3">
+                Types of Social Engineering Attacks
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  <a
+                    href="https://blog.knowbe4.com/social-engineering-number-one-cybersecurity-problem"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    KnowBe4: Top 10 Social Engineering Attacks
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.checkpoint.com/cyber-hub/threat-prevention/social-engineering-attacks/social-engineering-vs-phishing/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Infosec Institute: Phishing vs. Social Engineering
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section className="mb-6">
+              <h3 className="font-semibold text-lg text-black mb-3">
+                Identifying and Avoiding Social Engineering
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  <a
+                    href="https://www.austintexas.gov/sites/default/files/files/HR/NEO/social-engineering.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    US-CERT: Social Engineering Red Flags
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.nist.gov/privacy-framework/nist-sp-800-61"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    NIST—Digital Identity Guidelines (SP 800-61)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://staysafeonline.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    National Cyber Security Alliance: Stay Safe Online
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=lc7scxvKQOo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Cybrary: Social Engineering Explained (10 minutes)
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 className="font-semibold text-lg text-black mb-3">
+                Additional Resources
+              </h3>
+              <ul className="list-disc pl-6">
+                <li>
+                  <a
+                    href="https://www.infosecurity-magazine.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Infosecurity Magazine: Social Engineering
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
+            <h2 className="text-black font-bold text-2xl mb-6">
+              Ransomware Resources
+            </h2>
+
+            <section className="mb-6">
+              <h3 className="font-semibold text-lg text-black mb-3">
+                Understanding Ransomware
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  <a
+                    href="https://www.cisa.gov/stopransomware/ransomware-guide"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    CISA - Stop Ransomware Guide
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://searchsecurity.techtarget.com/definition/ransomware"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    TechTarget - Ransomware Definition
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section className="mb-6">
+              <h3 className="font-semibold text-lg text-black mb-3">
+                Types of Ransomware
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  <a
+                    href="https://blog.paloaltonetworks.com/2022/09/understanding-different-types-ransomware/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Palo Alto Networks - Types of Ransomware
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://heimdalsecurity.com/blog/ransomware-101/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Heimdal Security - Ransomware 101: Types, Delivery Methods,
+                    and Prevention
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section className="mb-6">
+              <h3 className="font-semibold text-lg text-black mb-3">
+                Protecting Yourself from Ransomware
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  <a
+                    href="https://www.nist.gov/cyberframework/ransomware"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    NIST - Ransomware Protection and Response
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.forbes.com/sites/forbestechcouncil/2022/07/19/how-to-protect-yourself-from-ransomware-attacks/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Forbes - How to Protect Yourself from Ransomware Attacks
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.sans.org/white-papers/40475/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    SANS Institute - Ransomware
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=Gc7F-4Op4n4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Cybrary - Ransomware Explained & How to Protect Yourself (15
+                    minutes)
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 className="font-semibold text-lg text-black mb-3">
+                Additional Resources
+              </h3>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  <a
+                    href="https://www.scmagazine.com/ransomware"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    SC Magazine - Ransomware
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.nomoreransom.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Europol - No More Ransom Project
+                  </a>
+                  <span className="text-sm text-gray-600">
+                    (Free decryption tools for some ransomware variants)
+                  </span>
+                </li>
+              </ul>
+            </section>
           </div>
 
           <div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
             <p className="topic text-black font-bold text-2xl p-4">
-              Ransomware Resources:
-            </p>
-            <div className="text-ash text-1.0em">
-              <ul className="list-disc pl-4">
-                <li>
-                  <p className="pl-4">Understanding Ransomware:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.cisa.gov/stopransomware/ransomware-guide"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Cybersecurity & Infrastructure Security Agency (CISA) -
-                        Stop Ransomware
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://searchsecurity.techtarget.com/definition/ransomware"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        TechTarget SearchSecurity - Ransomware Definition
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Types of Ransomware:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://blog.paloaltonetworks.com/2022/09/understanding-different-types-ransomware/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Palo Alto Networks - Understanding Different Types of
-                        Ransomware
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://heimdalsecurity.com/blog/ransomware-101/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Heimdal Security Blog - Ransomware 101: Different Types,
-                        Delivery Methods, and Prevention
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Protecting Yourself from Ransomware:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.nist.gov/cyberframework/ransomware"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        National Institute of Standards and Technology (NIST) -
-                        Ransomware Protection and Response
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.forbes.com/sites/forbestechcouncil/2022/07/19/how-to-protect-yourself-from-ransomware-attacks/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Forbes - How to Protect Yourself From Ransomware Attacks
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.sans.org/white-papers/40475/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        SANS Institute InfoSec Reading Room - Ransomware
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=Gc7F-4Op4n4"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Cybrary - Ransomware Explained & How to Protect Yourself
-                        (15 minutes)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Additional Resources:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.scmagazine.com/ransomware"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        SC Magazine - Ransomware
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.nomoreransom.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Europol - No More Ransom Project
-                      </a>{" "}
-                      (Provides free decryption tools for some ransomware
-                      variants)
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
-            <p className="topic text-black font-bold text-2xl p-4">
               Phishing Resources:
             </p>
-            <div className="content p-4 text-ash text-1.0em">
+            <div className="content p-4 text-ash text-1.0em  text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding Phishing:</p>
@@ -481,7 +482,7 @@ export default function Resourses() {
             <p className="text-black font-bold text-center  text-2xl p-4">
               DDoS Attacks Resources:
             </p>
-            <div className="content p-4 text-ash text-1.0em">
+            <div className="content p-4 text-ash text-1.0em  text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding DDoS Attacks:</p>
@@ -631,7 +632,7 @@ export default function Resourses() {
             <p className="text-black font-bold text-center  text-2xl p-4">
               Secure Communication:
             </p>
-            <div className="content p-4 text-ash text-1.0em">
+            <div className="content p-4 text-ash text-1.0em  text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding Secure Communication:</p>
@@ -782,7 +783,7 @@ export default function Resourses() {
             <p className="text-black font-bold text-center  text-2xl p-4">
               Incident Response:
             </p>
-            <div className="content p-4 text-ash text-1.0em">
+            <div className="content p-4 text-ash text-1.0em  text-gray-800">
               <ul className="list-disc pl-4">
                 <li>
                   <p className="pl-4">Understanding Incident Response:</p>
