@@ -28,6 +28,7 @@ const App = () => {
   const isLoginRoute = location.pathname === "/login";
   const isRegisterRoute = location.pathname === "/Signup";
   const isLiveThreatsMapRoute = location.pathname === "/LiveThreatsMap";
+  const isWebSimulation = location.pathname === "/websimulation";
 
   return (
     <div
@@ -38,9 +39,10 @@ const App = () => {
       }`}
     >
       {/* Conditionally render the Header based on the route */}
-      {!isLoginRoute && !isRegisterRoute && !isLiveThreatsMapRoute && (
-        <Header />
-      )}
+      {!isLoginRoute &&
+        !isRegisterRoute &&
+        !isLiveThreatsMapRoute &&
+        !isWebSimulation && <Header />}
 
       {/* Routes */}
       <Routes>

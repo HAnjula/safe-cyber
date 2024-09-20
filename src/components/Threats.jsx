@@ -14,33 +14,37 @@ export default function Threats() {
           muted
         ></video>
         <div className="relative z-10">
-          <p className="font-manrope font-medium text-gray-200 text-center leading-[70px] text-[50px] mt-20">
-            <span>
-              THREATS
-              <br />
-            </span>
-            <span className="text-[35px]">
-              To understand, manage, and mitigate cybersecurity risks. <br />
-            </span>
-          </p>
-          <p className="font-manrope font-medium text-white text-center leading-[52px] text-[34px] mt-8">
-            <span>
-              {" "}
-              Todays cyber threats remind us that in the digital age, vigilance
-              is the price of security.{" "}
+          {/* Main Title */}
+          <p className="font-manrope font-bold text-gray-200 text-center leading-tight text-[55px] mt-20">
+            <span>CYBER THREATS</span>
+            <br />
+            <span className="text-[38px] font-normal">
+              Understand, Manage, and Defend Against Evolving Risks
             </span>
           </p>
-          <div className="flex justify-center items-center w-full mt-10">
-            <p className="w-[949px] h-[289px] font-manrope font-medium text-white text-center leading-[26px] text-[25px]">
-              Learn Together, Stay Secure:
+
+          {/* Subheading */}
+          <p className="font-manrope font-medium text-white text-center leading-tight text-[30px] mt-10 max-w-4xl mx-auto">
+            In today’s digital landscape, security is not an option—it's a
+            necessity. Vigilance and preparedness are your strongest defenses.
+          </p>
+
+          {/* Call to Action */}
+          <div className="flex justify-center items-center w-full mt-12">
+            <p className="font-manrope font-semibold text-white text-center leading-[32px] text-[28px] w-[90%] md:w-[70%] lg:w-[50%] mx-auto">
+              <span>Stay Informed, Stay Protected:</span>
               <br />
-              <span className="block mt-7">
-                Access Solutions to Build Your Defenses.
+              <span className="block mt-5 text-[25px] font-light">
+                Explore practical solutions to fortify your defenses against
+                cyber threats.
               </span>
-              <br />
             </p>
           </div>
-          <TipsButton /> {/* Use the TipsButton component */}
+
+          {/* Button Section */}
+          <div className="flex justify-center mt-10">
+            <TipsButton /> {/* Use the TipsButton component */}
+          </div>
         </div>
       </div>
 

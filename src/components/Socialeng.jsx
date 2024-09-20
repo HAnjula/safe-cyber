@@ -1,6 +1,6 @@
 import DropdownButton1 from "./design/DropdownButton1.jsx";
 import DropdownButton2 from "./design/DropdownButton2.jsx";
-import DropdownButton3 from "./design/DropdownButton3.jsx"; // Adjust the path as necessary
+import DropdownButton3 from "./design/DropdownButton3.jsx";
 import DropdownButton4 from "./design/DropdownButton4.jsx";
 import DropdownButton5 from "./design/DropdownButton5.jsx";
 import DropdownButton6 from "./design/DropdownButton6.jsx";
@@ -54,7 +54,7 @@ export default function Socialeng() {
             <div className="absolute w-[62.5%] h-[62.51%] top-[18.74%] left-[18.75%] opacity-100 z-0 transform-none overflow-hidden bg-[url(/src/img/--image-9.png)] bg-no-repeat bg-contain"></div>
           </div>
           <div className="absolute w-[61.82%] h-[51.61%] top-[43.48%] left-[5.63%] opacity-100 z-1 transform-none text-justify leading-none">
-            <span className="text-3xl font-Manrope font-semibold leading-custom-normal text-[#b2a7bb]">
+            <span className="text-2xl body-2 text-n-4 ">
               {
                 "Social engineering is a psychological manipulation technique used by individuals or groups to deceive others into disclosing confidential information, providing access to restricted systems, or performing certain actions that they wouldn't typically do. It often involves exploiting human emotions like trust, fear, curiosity, or urgency to trick people into revealing sensitive data or compromising security measures. This can occur through various channels such as phone calls, emails, or in-person interactions. Essentially, social engineering exploits human behavior rather than technical vulnerabilities to achieve its objectives."
               }
