@@ -16,10 +16,19 @@ import Threats from "./components/Threats";
 import Socialeng from "./components/Socialeng";
 import WebSimulation from "./components/WebSimulation";
 import CyberAttackNews from "./components/News";
+<<<<<<< HEAD
 import Spyware from './components/spyware';
 import Botnets from './components/botnets';
 import Zeroexploits from './components/zeroexploits';
 import Phishing from './components/phishing';
+=======
+import Resources from "./components/Resources";
+import Spyware from "./components/spyware";
+import BotnetSimulation from "./components/botnets";
+import Zeroexploits from "./components/zeroexploits";
+import Phishing from "./components/phishing";
+import IncidentReportForm from "./components/IncidentReportForm";
+>>>>>>> d69155c8d01f7a70ad62d38e811a3d0e8703749f
 
 const App = () => {
   const location = useLocation();
@@ -35,9 +44,12 @@ const App = () => {
           : ""
       }`}
     >
+      {/* Conditionally render the Header based on the route */}
       {!isLoginRoute && !isRegisterRoute && !isLiveThreatsMapRoute && (
         <Header />
       )}
+
+      {/* Routes */}
       <Routes>
         <Route
           path="/"
@@ -60,14 +72,26 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/solutions" element={<Solutions />} />
         <Route path="/threats" element={<Threats />} />
+<<<<<<< HEAD
         <Route path="/spyware" element={<Spyware />} />
         <Route path="/botnets" element={<Botnets />} />
         <Route path="/zeroexploits" element={<Zeroexploits />} />
         <Route path="/phishing" element={<Phishing />} />
         <Route path="/Socialeng" element={<Socialeng />} />
+=======
+>>>>>>> d69155c8d01f7a70ad62d38e811a3d0e8703749f
         <Route path="/websimulation" element={<WebSimulation />} />
         <Route path="/news" element={<CyberAttackNews />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/spyware" element={<Spyware />} />
+        <Route path="/botnets" element={<BotnetSimulation />} />
+        <Route path="/zeroexploits" element={<Zeroexploits />} />
+        <Route path="/phishing" element={<Phishing />} />
+        <Route path="/Socialeng" element={<Socialeng />} />
       </Routes>
+
+      <IncidentReportForm />
+      {/* Button Gradient */}
       <ButtonGradient />
     </div>
   );

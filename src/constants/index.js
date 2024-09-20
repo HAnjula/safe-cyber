@@ -99,22 +99,27 @@ export const indicators = [
   {
     title: "Unusual file extensions",
     description: "File extensions such as .encrypted or .locked.",
+    link: "https://www.beforecrypt.com/en/list-of-known-ransomware-file-extensions/#understanding-file-extensions", // Add your specific link here
   },
   {
     title: "Significant decrease in system performance",
     description: "Your system may slow down noticeably.",
+    link: "https://bcs365.com/insights/how-to-know-if-youve-been-infected-by-ransomware-8-signs/", // Add your specific link here
   },
   {
     title: "Ransom notes appearing in file directories",
     description: "Ransom notes may appear in file directories.",
+    link: "https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/ransom-notes-know-what-ransomware-hit-you", // Add your specific link here
   },
   {
     title: "Inability to access files or applications",
     description: "You may be unable to open certain files or applications.",
+    link: "https://malwaretips.com/blogs/remove-ransomware-virus/", // Add your specific link here
   },
   {
     title: "Unexpected system restarts or crashes",
     description: "Your system may restart or crash unexpectedly.",
+    link: "https://www.lifewire.com/fix-computer-randomly-restarts-5220171", // Add your specific link here
   },
 ];
 

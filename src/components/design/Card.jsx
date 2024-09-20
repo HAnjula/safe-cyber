@@ -1,13 +1,20 @@
+<<<<<<< HEAD
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+=======
+import { useNavigate } from "react-router-dom";
+>>>>>>> d69155c8d01f7a70ad62d38e811a3d0e8703749f
 const Card = ({ topic, imageSrc, description, link }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate(link);
   };
+<<<<<<< HEAD
 
+=======
+>>>>>>> d69155c8d01f7a70ad62d38e811a3d0e8703749f
   return (
     <div
       onClick={handleClick}
