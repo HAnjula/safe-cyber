@@ -7,13 +7,25 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        typing: {
-          "0%": { width: "0" },
-          "100%": { width: "100%" },
+        expand: {
+          "0%": { transform: "scale(0)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        retract: {
+          "0%": { transform: "scale(1)", opacity: "1" },
+          "100%": { transform: "scale(0)", opacity: "0" },
+        },
+
+        growShrink: {
+          "0%": { transform: "scale(1)" }, // Start at normal size
+          "50%": { transform: "scale(1.4)" }, // Grow to 1.2x size
+          "100%": { transform: "scale(1)" }, // Shrink back to normal size
         },
       },
       animation: {
-        typing: "typing 5s steps(40, end) forwards",
+        growShrink: "growShrink 2s ease-in-out infinite", // 2-second loop
+        expand: "expand 0.4s ease-out forwards",
+        retract: "retract 0.4s ease-in forwards",
       },
       colors: {
         color: {
