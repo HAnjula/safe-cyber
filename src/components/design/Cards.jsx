@@ -8,7 +8,7 @@ const Cards = () => {
           topic="Ransomware"
           imageSrc="/src/assets/ransomware.jpeg"
           description="Ransomware is a type of malicious software that encrypts files on a victim's computer, demanding payment for their release."
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link="/ransomware"
         />
         <Card
           topic="Social Engineering"
@@ -20,13 +20,13 @@ const Cards = () => {
           topic="Malware"
           imageSrc="/src/assets/Malware-Attacks.jpg"
           description="Malware, short for malicious software, is designed to disrupt, damage, or gain unauthorized access to computer systems and data."
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link="/ransomware"
         />
         <Card
           topic="DDoS"
           imageSrc="/src/assets/ddos.jpg"
           description="A Distributed Denial of Service (DDoS) attack floods a network or website with an overwhelming amount of traffic, rendering it inaccessible to users."
-          link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          link="/websimulation"
         />
       </div>
       <div className="flex justify-center space-x-8">

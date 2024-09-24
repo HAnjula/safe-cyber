@@ -30,6 +30,7 @@ import SolutionsSpyware from "./components/solspyware";
 import SolutionsZero from "./components/solzero";
 import SolutionsMalware from "./components/solmalware";
 import SolutionsPhishing from "./components/solphishing";
+import CourseModuleComponent from "./components/CourseModuleComponent";
 
 const App = () => {
   const location = useLocation();
@@ -92,6 +93,7 @@ const App = () => {
         <Route path="/solzero" element={<SolutionsZero />} />
         <Route path="/solmalware" element={<SolutionsMalware />} />
         <Route path="/solphishing" element={<SolutionsPhishing />} />
+        <Route path="/course" element={<CourseModuleComponent />} />
       </Routes>
 
       <IncidentReportForm />

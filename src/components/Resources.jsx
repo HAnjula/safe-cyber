@@ -5,13 +5,14 @@ export default function Resourses() {
       <div className="relative w-full">
         {/* First Container */}
         <div className="relative w-full h-screen flex flex-col justify-center items-center">
-          <video
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            src="src/assets/bgvideor-vmake.mp4"
-            autoPlay
-            loop
-            muted
-          />
+        <video
+  className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
+  src="src/assets/resvideo.mp4"
+  autoPlay
+  loop
+  muted
+/>
+
           {/* Content that should overlay the video */}
           <div className="relative z-10 text-center px-4">
             <Heading
@@ -323,604 +324,603 @@ export default function Resourses() {
           </div>
 
           <div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
-            <p className="topic text-black font-bold text-2xl p-4">
-              Phishing Resources:
-            </p>
-            <div className="content p-4 text-ash text-1.0em  text-gray-800">
-              <ul className="list-disc pl-4">
-                <li>
-                  <p className="pl-4">Understanding Phishing:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://docs.apwg.org/reports/apwg_report_august_2007.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Anti-Phishing Working Group (APWG) - Phishing Definition
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.knowbe4.com/what-is-phishing/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        KnowBe4 - What is Phishing?
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.ftc.gov/phishing-0"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Federal Trade Commission (FTC) - Avoiding Phishing Scams
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=XBkzBrXlle0"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        TED-Ed - How Phishing Works (3 minutes)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Types of Phishing Attacks:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://phished.io/phishing-types/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Phished - Types of Phishing Attacks
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://cyberscoop.com/types-of-phishing-attacks/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Cyberscoop - The Different Types of Phishing Attacks You
-                        Need to Know About
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Identifying and Avoiding Phishing:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://owasp.org/www-community/attacks/Phishing_Attacks/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Open Web Application Security Project (OWASP) - Phishing
-                        Attacks
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.nist.gov/privacy-framework/nist-sp-800-61"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        National Institute of Standards and Technology (NIST) -
-                        Special Publication 800-61 Revision 3 - Digital Identity
-                        Guidelines: (See Section 5.3.1 - Security Awareness and
-                        Training)
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.us-cert.gov/sites/default/files/publications/Phishing_Red_Flags.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        US-CERT - Phishing Red Flags
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=lc7scxvKQOo"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        KnowBe4 - How to Spot a Phishing Email (7 minutes)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Additional Resources:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.infosecurity-magazine.com/phishing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Security Magazine - Phishing
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.opendns.com/phishing-quiz/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        OpenDNS Phishing Test - Test Your Phishing IQ
-                        (Interactive quiz to test your ability to identify
-                        phishing emails)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
-            <p className="text-black font-bold text-center  text-2xl p-4">
-              DDoS Attacks Resources:
-            </p>
-            <div className="content p-4 text-ash text-1.0em  text-gray-800">
-              <ul className="list-disc pl-4">
-                <li>
-                  <p className="pl-4">Understanding DDoS Attacks:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://developers.cloudflare.com/ddos-protection/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Cloudflare - What is a DDoS Attack?
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.cisco.com/c/en/us/products/security/what-is-a-ddos-attack.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Cisco - What is a DDoS Attack?
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=8ZxP-FA6kAs"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Kaspersky - What is a DDoS Attack? (2 minutes)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Types of DDoS Attacks:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.incapsula.com/ddos/attack-glossary.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Incapsula - DDoS Attack Glossary
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.imperva.com/learn/ddos/types-of-ddos-attacks/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Imperva - Types of DDoS Attacks
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.us-cert.gov/ncas/tips/ST04-015"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        US-CERT - Understanding Denial-of-Service Attacks
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Mitigating DDoS Attacks:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.paloaltonetworks.com/cyberpedia/what-is-a-ddos-attack"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Palo Alto Networks - What is a DDoS Attack? (Mitigation
-                        Strategies)
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.arbornetworks.com/blog/asert/best-practices-ddos-defense/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Arbor Networks - Best Practices for DDoS Defense
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.zdnet.com/article/ddos-attacks-how-to-protect-your-business-from-digital-destruction/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        ZDNet - DDoS Attacks: How to Protect Your Business
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=7KGSf5J8jVY"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Fortinet - DDoS Attack Mitigation (4 minutes)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Additional Resources:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.digitalattackmap.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Digital Attack Map - Live DDoS Attack Data Visualization
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.prolexic.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Prolexic - DDoS Mitigation Solutions
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
-            <p className="text-black font-bold text-center  text-2xl p-4">
-              Secure Communication:
-            </p>
-            <div className="content p-4 text-ash text-1.0em  text-gray-800">
-              <ul className="list-disc pl-4">
-                <li>
-                  <p className="pl-4">Understanding Secure Communication:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.eff.org/pages/tools"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Electronic Frontier Foundation (EFF) - Surveillance
-                        Self-Defense Tools
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://proton.me/blog/what-is-end-to-end-encryption"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Proton Mail - What is End-to-End Encryption?
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=K01JJ7zOBd4"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Kaspersky - Secure Communication (3 minutes)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Tools for Secure Communication:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://signal.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Signal - Private Messenger
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.whatsapp.com/security/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        WhatsApp - Security
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://wire.com/en/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Wire - Secure Collaboration
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://element.io/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Element - Secure Messaging
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Practices for Secure Communication:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://ssd.eff.org/en/module/protecting-yourself-against-phishing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        EFF - Protecting Yourself Against Phishing
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.us-cert.gov/ncas/tips/ST05-016"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        US-CERT - Using Caution with Email Attachments
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=G7G0IGDJZn0"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        CrashCourse - Secure Communication Basics (10 minutes)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Additional Resources:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.privacytools.io/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        PrivacyTools - Encryption Against Global Mass
-                        Surveillance
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://proton.me/blog/guide-to-privacy"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Proton Mail - Complete Guide to Online Privacy
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
-            <p className="text-black font-bold text-center  text-2xl p-4">
-              Incident Response:
-            </p>
-            <div className="content p-4 text-ash text-1.0em  text-gray-800">
-              <ul className="list-disc pl-4">
-                <li>
-                  <p className="pl-4">Understanding Incident Response:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.sans.org/white-papers/incident-response-101/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        SANS Institute - Incident Response 101
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.cisa.gov/incident-handling-overview"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        CISA - Incident Handling Overview
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=6pYTLysFEdw"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        IBM - Incident Response Plan: What To Do After a Data
-                        Breach (3 minutes)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Incident Response Plans:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.mitre.org/publications/technical-papers/incident-response-planning"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        MITRE - Incident Response Planning
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.us-cert.gov/sites/default/files/publications/Incident_Response_Best_Practices.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        US-CERT - Incident Response Best Practices
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.nist.gov/itl/special-publication-800-61"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        NIST - Special Publication 800-61 Revision 2: Computer
-                        Security Incident Handling Guide
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Post-Incident Activities:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.sans.org/white-papers/post-incident-activities/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        SANS Institute - Post-Incident Activities
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.securitymagazine.com/articles/90989-the-importance-of-post-incident-reviews-and-what-they-should-cover"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Security Magazine - The Importance of Post-Incident
-                        Reviews
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.youtube.com/watch?v=NQ9W5k4Oh4E"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        CISCO - Conducting a Post-Incident Review (7 minutes)
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <p className="pl-4">Additional Resources:</p>
-                  <ul className="list-disc pl-8">
-                    <li>
-                      <a
-                        href="https://www.fireeye.com/services/incident-response.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        FireEye - Incident Response Services
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.paloaltonetworks.com/cyberpedia/what-is-incident-response"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-black-400 hover:underline"
-                      >
-                        Palo Alto Networks - What is Incident Response?
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <h2 className="text-black font-bold text-2xl mb-6">
+    Phishing Resources
+  </h2>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">
+      Understanding Phishing
+    </h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://docs.apwg.org/reports/apwg_report_august_2007.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Anti-Phishing Working Group (APWG) - Phishing Definition
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.knowbe4.com/what-is-phishing/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          KnowBe4 - What is Phishing?
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.ftc.gov/phishing-0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Federal Trade Commission (FTC) - Avoiding Phishing Scams
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=XBkzBrXlle0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          TED-Ed - How Phishing Works (3 minutes)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">
+      Types of Phishing Attacks
+    </h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://phished.io/phishing-types/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Phished - Types of Phishing Attacks
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://cyberscoop.com/types-of-phishing-attacks/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Cyberscoop - The Different Types of Phishing Attacks You Need to Know About
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">
+      Identifying and Avoiding Phishing
+    </h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://owasp.org/www-community/attacks/Phishing_Attacks/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          OWASP - Phishing Attacks
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nist.gov/privacy-framework/nist-sp-800-61"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          NIST - Special Publication 800-61 Revision 3
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.us-cert.gov/sites/default/files/publications/Phishing_Red_Flags.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          US-CERT - Phishing Red Flags
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=lc7scxvKQOo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          KnowBe4 - How to Spot a Phishing Email (7 minutes)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h3 className="font-semibold text-lg text-black mb-3">
+      Additional Resources
+    </h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.infosecurity-magazine.com/phishing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Security Magazine - Phishing
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.opendns.com/phishing-quiz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          OpenDNS Phishing Test - Test Your Phishing IQ
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
+  <h2 className="text-black font-bold text-2xl mb-6 text-center">
+    DDoS Attacks Resources
+  </h2>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">Understanding DDoS Attacks</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://developers.cloudflare.com/ddos-protection/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Cloudflare - What is a DDoS Attack?
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.cisco.com/c/en/us/products/security/what-is-a-ddos-attack.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Cisco - What is a DDoS Attack?
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=8ZxP-FA6kAs"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Kaspersky - What is a DDoS Attack? (2 minutes)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">Types of DDoS Attacks</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.incapsula.com/ddos/attack-glossary.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Incapsula - DDoS Attack Glossary
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.imperva.com/learn/ddos/types-of-ddos-attacks/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Imperva - Types of DDoS Attacks
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.us-cert.gov/ncas/tips/ST04-015"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          US-CERT - Understanding Denial-of-Service Attacks
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">Mitigating DDoS Attacks</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.paloaltonetworks.com/cyberpedia/what-is-a-ddos-attack"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Palo Alto Networks - What is a DDoS Attack? (Mitigation Strategies)
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.arbornetworks.com/blog/asert/best-practices-ddos-defense/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Arbor Networks - Best Practices for DDoS Defense
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.zdnet.com/article/ddos-attacks-how-to-protect-your-business-from-digital-destruction/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          ZDNet - DDoS Attacks: How to Protect Your Business
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=7KGSf5J8jVY"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Fortinet - DDoS Attack Mitigation (4 minutes)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h3 className="font-semibold text-lg text-black mb-3">Additional Resources</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.digitalattackmap.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Digital Attack Map - Live DDoS Attack Data Visualization
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.prolexic.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Prolexic - DDoS Mitigation Solutions
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
+  <h2 className="text-black font-bold text-2xl mb-6 text-center">
+    Secure Communication
+  </h2>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">Understanding Secure Communication</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.eff.org/pages/tools"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Electronic Frontier Foundation (EFF) - Surveillance Self-Defense Tools
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://proton.me/blog/what-is-end-to-end-encryption"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Proton Mail - What is End-to-End Encryption?
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=K01JJ7zOBd4"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Kaspersky - Secure Communication (3 minutes)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">Tools for Secure Communication</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://signal.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Signal - Private Messenger
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.whatsapp.com/security/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          WhatsApp - Security
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://wire.com/en/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Wire - Secure Collaboration
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://element.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Element - Secure Messaging
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">Practices for Secure Communication</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://ssd.eff.org/en/module/protecting-yourself-against-phishing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          EFF - Protecting Yourself Against Phishing
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.us-cert.gov/ncas/tips/ST05-016"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          US-CERT - Using Caution with Email Attachments
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=G7G0IGDJZn0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          CrashCourse - Secure Communication Basics (10 minutes)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h3 className="font-semibold text-lg text-black mb-3">Additional Resources</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.privacytools.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          PrivacyTools - Encryption Against Global Mass Surveillance
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://proton.me/blog/guide-to-privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Proton Mail - Complete Guide to Online Privacy
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<div className="w-[400px] h-auto bg-[#d4c8df] shadow-md flex flex-col p-9 mb-4">
+  <h2 className="text-black font-bold text-2xl mb-6 text-center">
+    Incident Response
+  </h2>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">Understanding Incident Response</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.sans.org/white-papers/incident-response-101/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          SANS Institute - Incident Response 101
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.cisa.gov/incident-handling-overview"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          CISA - Incident Handling Overview
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=6pYTLysFEdw"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          IBM - Incident Response Plan: What To Do After a Data Breach (3 minutes)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">Incident Response Plans</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.mitre.org/publications/technical-papers/incident-response-planning"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          MITRE - Incident Response Planning
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.us-cert.gov/sites/default/files/publications/Incident_Response_Best_Practices.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          US-CERT - Incident Response Best Practices
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.nist.gov/itl/special-publication-800-61"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          NIST - Special Publication 800-61 Revision 2: Computer Security Incident Handling Guide
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section className="mb-6">
+    <h3 className="font-semibold text-lg text-black mb-3">Post-Incident Activities</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.sans.org/white-papers/post-incident-activities/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          SANS Institute - Post-Incident Activities
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.securitymagazine.com/articles/90989-the-importance-of-post-incident-reviews-and-what-they-should-cover"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Security Magazine - The Importance of Post-Incident Reviews
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/watch?v=NQ9W5k4Oh4E"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          CISCO - Conducting a Post-Incident Review (7 minutes)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h3 className="font-semibold text-lg text-black mb-3">Additional Resources</h3>
+    <ul className="list-disc pl-6 space-y-2">
+      <li>
+        <a
+          href="https://www.fireeye.com/services/incident-response.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          FireEye - Incident Response Services
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.paloaltonetworks.com/cyberpedia/what-is-incident-response"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:underline"
+        >
+          Palo Alto Networks - What is Incident Response?
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+
         </div>
       </div>
     </div>

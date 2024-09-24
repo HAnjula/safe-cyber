@@ -11,6 +11,7 @@ import PreventionStrategies from "./PreventionStrategies";
 import ImmediateActions from "./ImmediateActions";
 import SimulationComponent from "./SimulatedRansomwareAttackExercises";
 import UnderstandingRansomwareMechanics from "./UnderstandingRansomwareMechanics";
+import Socialeng from "./Socialeng";
 
 const Ransomware = () => {
   const [password, setPassword] = useState("");

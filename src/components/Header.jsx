@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   // Check if the current route is "/ransomware"
-  const isRansomwarePage = pathname.pathname === "/ransomware";
+  const isRansomwarePage = pathname.pathname === "/course";
 
   return (
     <div
@@ -74,7 +74,7 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
         <Link
-          to={isRansomwarePage ? "/" : "/ransomware"} // If on "ransomware" page, go to home ("/"), otherwise go to "ransomware"
+          to={isRansomwarePage ? "/" : "/course"} // If on "ransomware" page, go to home ("/"), otherwise go to "ransomware"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           {isRansomwarePage ? "Back to Home" : "Get started"}
