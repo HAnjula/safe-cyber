@@ -80,8 +80,9 @@ const Header = () => {
           {isRansomwarePage ? "Back to Home" : "Get started"}
         </Link>
         <Link to={"/login"}>
-          <Button className="hidden lg:flex">Sign in</Button>
+          <Button className="hidden lg:flex !important">Sign in</Button>
         </Link>
+
         <Button
           className="ml-auto lg:hidden"
           px="px-3"

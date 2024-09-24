@@ -22,6 +22,14 @@ import BotnetSimulation from "./components/botnets";
 import Zeroexploits from "./components/zeroexploits";
 import Phishing from "./components/phishing";
 import IncidentReportForm from "./components/IncidentReportForm";
+import SolutionsRansomeware from "./components/solransomeware";
+import SolutionsBotnets from "./components/solbotnets";
+import SolutionsDdos from "./components/solddos";
+import SolutionsSocialeng from "./components/solsocialeng";
+import SolutionsSpyware from "./components/solspyware";
+import SolutionsZero from "./components/solzero";
+import SolutionsMalware from "./components/solmalware";
+import SolutionsPhishing from "./components/solphishing";
 
 const App = () => {
   const location = useLocation();
@@ -75,6 +83,15 @@ const App = () => {
         <Route path="/zeroexploits" element={<Zeroexploits />} />
         <Route path="/phishing" element={<Phishing />} />
         <Route path="/Socialeng" element={<Socialeng />} />
+        <Route path="/WebSimulation" element={<WebSimulation />} />
+        <Route path="/solransomeware" element={<SolutionsRansomeware />} />
+        <Route path="/solbotnets" element={<SolutionsBotnets />} />
+        <Route path="/solddos" element={<SolutionsDdos />} />
+        <Route path="/solsocialeng" element={<SolutionsSocialeng />} />
+        <Route path="/solspyware" element={<SolutionsSpyware />} />
+        <Route path="/solzero" element={<SolutionsZero />} />
+        <Route path="/solmalware" element={<SolutionsMalware />} />
+        <Route path="/solphishing" element={<SolutionsPhishing />} />
       </Routes>
 
       <IncidentReportForm />
