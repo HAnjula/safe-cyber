@@ -18,13 +18,13 @@ export default function Threats() {
           <p className="font-manrope font-bold text-gray-200 text-center leading-tight text-[55px] mt-20">
             <span>CYBER THREATS</span>
             <br />
-            <span className="text-[38px] font-normal">
+            <span className="text-[30px] text-gray-400 font-normal">
               Understand, Manage, and Defend Against Evolving Risks
             </span>
           </p>
 
           {/* Subheading */}
-          <p className="font-manrope font-medium text-white text-center leading-tight text-[30px] mt-10 max-w-4xl mx-auto">
+          <p className="font-manrope font-small text-gray-500 text-center leading-tight text-[20px] mt-10 max-w-4xl mx-auto">
             In today’s digital landscape, security is not an option—it's a
             necessity. Vigilance and preparedness are your strongest defenses.
           </p>
@@ -32,9 +32,11 @@ export default function Threats() {
           {/* Call to Action */}
           <div className="flex justify-center items-center w-full mt-12">
             <p className="font-manrope font-semibold text-white text-center leading-[32px] text-[28px] w-[90%] md:w-[70%] lg:w-[50%] mx-auto">
-              <span>Stay Informed, Stay Protected:</span>
+              <span className="text-orange-400 text-[25px] font-normal">
+                Stay Informed, Stay Protected:
+              </span>
               <br />
-              <span className="block mt-5 text-[25px] font-light">
+              <span className="block mt-3 text-[20px] font-normal">
                 Explore practical solutions to fortify your defenses against
                 cyber threats.
               </span>
@@ -42,9 +44,6 @@ export default function Threats() {
           </div>
 
           {/* Button Section */}
-          <div className="flex justify-center mt-10">
-            <TipsButton /> {/* Use the TipsButton component */}
-          </div>
         </div>
       </div>
 

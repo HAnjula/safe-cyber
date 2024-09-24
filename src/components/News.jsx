@@ -16,10 +16,15 @@ const CyberAttackNews = () => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(API_URL);
-        setNews(response.data.articles);
+        // Sort news articles by the published date in descending order
+        const sortedNews = response.data.articles.sort(
+          (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt)
+        );
+        setNews(sortedNews);
         setLoading(false);
 
-        const latestArticle = response.data.articles[0];
+        // Set the latest article (after sorting)
+        const latestArticle = sortedNews[0];
         setLatest(latestArticle);
       } catch (error) {
         setError(error);
@@ -29,6 +34,7 @@ const CyberAttackNews = () => {
 
     fetchNews();
 
+    // Set up auto-refresh every 5 minutes (300000 ms)
     const intervalId = setInterval(fetchNews, 300000);
     return () => clearInterval(intervalId);
   }, []);
