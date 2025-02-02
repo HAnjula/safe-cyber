@@ -22,12 +22,22 @@ import BotnetSimulation from "./components/botnets";
 import Zeroexploits from "./components/zeroexploits";
 import Phishing from "./components/phishing";
 import IncidentReportForm from "./components/IncidentReportForm";
+import SolutionsRansomeware from "./components/solransomeware";
+import SolutionsBotnets from "./components/solbotnets";
+import SolutionsDdos from "./components/solddos";
+import SolutionsSocialeng from "./components/solsocialeng";
+import SolutionsSpyware from "./components/solspyware";
+import SolutionsZero from "./components/solzero";
+import SolutionsMalware from "./components/solmalware";
+import SolutionsPhishing from "./components/solphishing";
+import CourseModuleComponent from "./components/CourseModuleComponent";
 
 const App = () => {
   const location = useLocation();
   const isLoginRoute = location.pathname === "/login";
   const isRegisterRoute = location.pathname === "/Signup";
   const isLiveThreatsMapRoute = location.pathname === "/LiveThreatsMap";
+  const isWebSimulation = location.pathname === "/websimulation";
 
   return (
     <div
@@ -38,9 +48,10 @@ const App = () => {
       }`}
     >
       {/* Conditionally render the Header based on the route */}
-      {!isLoginRoute && !isRegisterRoute && !isLiveThreatsMapRoute && (
-        <Header />
-      )}
+      {!isLoginRoute &&
+        !isRegisterRoute &&
+        !isLiveThreatsMapRoute &&
+        !isWebSimulation && <Header />}
 
       {/* Routes */}
       <Routes>
@@ -73,6 +84,16 @@ const App = () => {
         <Route path="/zeroexploits" element={<Zeroexploits />} />
         <Route path="/phishing" element={<Phishing />} />
         <Route path="/Socialeng" element={<Socialeng />} />
+        <Route path="/WebSimulation" element={<WebSimulation />} />
+        <Route path="/solransomeware" element={<SolutionsRansomeware />} />
+        <Route path="/solbotnets" element={<SolutionsBotnets />} />
+        <Route path="/solddos" element={<SolutionsDdos />} />
+        <Route path="/solsocialeng" element={<SolutionsSocialeng />} />
+        <Route path="/solspyware" element={<SolutionsSpyware />} />
+        <Route path="/solzero" element={<SolutionsZero />} />
+        <Route path="/solmalware" element={<SolutionsMalware />} />
+        <Route path="/solphishing" element={<SolutionsPhishing />} />
+        <Route path="/course" element={<CourseModuleComponent />} />
       </Routes>
 
       <IncidentReportForm />

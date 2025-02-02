@@ -215,15 +215,15 @@ const UnderstandingRansomwareMechanics = () => {
 
   return (
     <section className="max-w-6xl mx-auto my-8 p-4">
-      <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">
+      <h2 className="text-3xl font-bold mb-8 text-center text-white-600">
         Understanding Ransomware Mechanics
       </h2>
       <div
-        className="border border-gray-300 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer flex items-center justify-center"
+        className="border border-pink-300 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer flex items-center justify-center"
         onClick={openSimulationModal}
       >
         <div className="text-center">
-          <h3 className="text-xl font-bold mb-4 text-blue-600">
+          <h3 className="text-xl font-bold mb-4 text-purple-600">
             Start Simulation
           </h3>
           <p className="text-gray-600">

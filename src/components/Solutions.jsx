@@ -1,5 +1,5 @@
 import TipsButton from "./design/TipsButton.jsx"; // Import the TipsButton component
-import Cards from "./design/Cards.jsx";
+import Cardssol from "./design/Cardssol.jsx";
 
 export default function Solutions() {
   return (
@@ -54,7 +54,7 @@ export default function Solutions() {
           Cybersecurity Awareness
         </h1>
 
-        <Cards />
+        <Cardssol />
       </div>
     </div>
   );

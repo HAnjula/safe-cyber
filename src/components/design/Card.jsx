@@ -14,7 +14,7 @@ const Card = ({ topic, imageSrc, description, link }) => {
       <div className="p-6 flex flex-col justify-between h-full">
         <div>
           <h3 className="text-2xl font-bold mb-4 text-red-500">{topic}</h3>
-          <p className="text-gray-300">{description}</p>
+          <p className="text-gray-500">{description}</p>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   // Check if the current route is "/ransomware"
-  const isRansomwarePage = pathname.pathname === "/ransomware";
+  const isRansomwarePage = pathname.pathname === "/course";
 
   return (
     <div
@@ -37,11 +37,11 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8 z-2" href="#hero">
+        <a className="block w-[12rem] xl:mr-8 z-2" href="/">
           <img
             src="src/assets/logo.png"
-            width={20}
-            height={20}
+            width={35}
+            height={35}
             alt="Safecyber"
             className="z-3"
           />
@@ -74,14 +74,15 @@ const Header = () => {
           <HamburgerMenu />
         </nav>
         <Link
-          to={isRansomwarePage ? "/" : "/ransomware"} // If on "ransomware" page, go to home ("/"), otherwise go to "ransomware"
+          to={isRansomwarePage ? "/" : "/course"} // If on "ransomware" page, go to home ("/"), otherwise go to "ransomware"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           {isRansomwarePage ? "Back to Home" : "Get started"}
         </Link>
         <Link to={"/login"}>
-          <Button className="hidden lg:flex">Sign in</Button>
+          <Button className="hidden lg:flex !important">Sign in</Button>
         </Link>
+
         <Button
           className="ml-auto lg:hidden"
           px="px-3"

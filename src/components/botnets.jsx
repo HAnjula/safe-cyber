@@ -15,29 +15,41 @@ const BotnetSimulation = () => {
     <div className="bg-gray-900 text-white h-screen p-4 relative">
       <h1 className="text-3xl text-center mb-8">Botnet Attack Simulation</h1>
       <div className="flex justify-center items-center h-full">
+        {/* Stage 1: Botnet Infection */}
         {stage === 1 && (
           <div>
-            <h2 className="text-2xl">Stage 1: Botnet Formation</h2>
+            <h2 className="text-2xl">Stage 1: Botnet Infection</h2>
             <p className="mt-4">
-              Infected devices communicate with the C2 server.
+              Phishing emails or malware compromise devices, adding them to the
+              botnet.
+            </p>
+            <p className="mt-4">
+              <strong>Prevention Tip:</strong> Keep your software updated and
+              avoid suspicious emails.
             </p>
             <div className="mt-8">
               <div className="grid grid-cols-3 gap-4">
-                <div className="bg-blue-700 p-4 rounded-lg">Device 1</div>
-                <div className="bg-blue-700 p-4 rounded-lg">Device 2</div>
-                <div className="bg-blue-700 p-4 rounded-lg">Device 3</div>
-              </div>
-              <div className="mt-4">
-                <div className="bg-red-600 p-4 rounded-lg">C2 Server</div>
+                <div className="bg-blue-700 p-4 rounded-lg">Infected PC</div>
+                <div className="bg-blue-700 p-4 rounded-lg">IoT Device</div>
+                <div className="bg-blue-700 p-4 rounded-lg">Router</div>
               </div>
             </div>
           </div>
         )}
 
+        {/* Stage 2: Command and Control */}
         {stage === 2 && (
           <div>
-            <h2 className="text-2xl">Stage 2: Command & Control</h2>
-            <p className="mt-4">C2 server issues commands to bots.</p>
+            <h2 className="text-2xl">Stage 2: Command & Control (C2)</h2>
+            <p className="mt-4">
+              The attacker sends instructions to the infected devices from the
+              C2 server.
+            </p>
+            <p className="mt-4">
+              <strong>Prevention Tip:</strong> Implement network traffic
+              analysis and configure firewalls to block malicious C2
+              communications.
+            </p>
             <div className="mt-8">
               <div className="bg-red-600 p-4 rounded-lg">C2 Server</div>
               <div className="grid grid-cols-3 gap-4 mt-4">
@@ -49,11 +61,17 @@ const BotnetSimulation = () => {
           </div>
         )}
 
+        {/* Stage 3: Attack Execution */}
         {stage === 3 && (
           <div>
             <h2 className="text-2xl">Stage 3: Attack Execution</h2>
             <p className="mt-4">
-              Bots launch a DDoS attack on the target server.
+              Bots flood the target server with traffic, disrupting services or
+              stealing data.
+            </p>
+            <p className="mt-4">
+              <strong>Prevention Tip:</strong> Use DDoS protection services and
+              encrypt sensitive data.
             </p>
             <div className="mt-8">
               <div className="grid grid-cols-3 gap-4">
@@ -68,10 +86,18 @@ const BotnetSimulation = () => {
           </div>
         )}
 
+        {/* Stage 4: Mitigation and Recovery */}
         {stage === 4 && (
           <div>
-            <h2 className="text-2xl">Stage 4: Mitigation Strategies</h2>
-            <p className="mt-4">Apply strategies to mitigate the attack.</p>
+            <h2 className="text-2xl">Stage 4: Mitigation & Recovery</h2>
+            <p className="mt-4">
+              Security teams cut off C2 communication, isolate infected devices,
+              and begin recovery.
+            </p>
+            <p className="mt-4">
+              <strong>Prevention Tip:</strong> Conduct regular backups and run
+              scans to remove malware.
+            </p>
             <div className="mt-8">
               <div className="bg-yellow-600 p-4 rounded-lg">Firewall</div>
               <div className="bg-green-600 p-4 rounded-lg mt-4">

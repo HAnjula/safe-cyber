@@ -27,8 +27,6 @@ const IndicatorsOfCompromise = () => (
   </div>
 );
 
-
-
 // Real-World Examples Component
 
 // Main Recognizing Attacks Component
